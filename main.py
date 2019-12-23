@@ -7,4 +7,5 @@ import output
 
 #output.write_csv(df_lst)
 
-preprocessing.course_overlap()
+#preprocessing.course_overlap()
+preprocessing.hard_insert()

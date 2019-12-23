@@ -50,6 +50,115 @@ def concat(df_lst1 , df_lst2) :
 
     return df_lst
 
+
+
+
+#將由其他系支援的課程併入原本的系所課表內
+def hard_insert() : 
+    path = os.getcwd()
+    
+    financial_df , mis_df , ie_df , accounting_df = read_file()
+    
+    source_lst_1 = []
+    source_lst_2 = []
+
+    #數學系
+    with open(path + "/1081/2104_e.html" , 'r' , encoding = 'utf-8') as file :
+        source_lst_1.append(file.read())
+
+    with open(path + "/1082/2104_e.html" , 'r' , encoding = 'utf-8') as file :
+        source_lst_2.append(file.read())
+
+    #企管系
+    with open(path + "/1081/5204_e.html" , 'r' , encoding = 'utf-8') as file :
+        source_lst_1.append(file.read())
+
+    with open(path + "/1082/5204_e.html" , 'r' , encoding = 'utf-8') as file :
+        source_lst_2.append(file.read())
+
+    #經濟系
+    with open(path + "/1081/5104_e.html" , 'r' , encoding = 'utf-8') as file :
+        source_lst_1.append(file.read())
+    
+    with open(path + "/1082/5104_e.html" , 'r' , encoding = 'utf-8') as file :
+        source_lst_2.append(file.read())
+
+
+    df_lst_1 = []
+    df_lst_2 = []
+
+    remine_cols = ["Year Standing" , "Course Title" , "Credit" , "Credit type" , "Day/Period" , "Remarks(Might contain Chinese due to course remarks which cannot be translated afterwards)"]
+    for i in source_lst_1 : 
+        df = pd.read_html(i)
+        df = df[0]
+        df = df[remine_cols]
+        df.columns = ["Year Standing" , "Course Title" , "Credit" , "Credit type" , "Day/Period" , "Remarks"]
+        df['semester'] = 1
+        df_lst_1.append(df)
+
+    for i in source_lst_2 : 
+        df = pd.read_html(i)
+        df = df[0]
+        df = df[remine_cols]
+        df.columns = ["Year Standing" , "Course Title" , "Credit" , "Credit type" , "Day/Period" , "Remarks"]
+        df['semester'] = 2
+        df_lst_2.append(df)
+
+    df_lst = concat(df_lst_1 , df_lst_2)
+
+    math_df = df_lst[0]
+    manage_df = df_lst[1]
+    eco_df = df_lst[2]
+
+    math_df.reset_index(inplace = True)
+    manage_df.reset_index(inplace = True)
+    eco_df.reset_index(inplace = True)
+
+    #新增數學系支援的課程
+    mis_insert_df = math_df.loc[math_df["Course Title"].str.contains("Calculus") & math_df["Remarks"].str.contains("Information Management")]
+    ie_insert_df = math_df.loc[math_df["Course Title"].str.contains("Calculus") & math_df["Remarks"].str.contains("Computer Science")]
+    financial_insert_df = math_df.loc[math_df["Course Title"].str.contains("Calculus") & math_df["Remarks"].str.contains("Finance and Banking")]
+    accounting_insert_df = math_df.loc[math_df["Course Title"].str.contains("Calculus") & math_df["Remarks"].str.contains("Accounting and Information Technology")]
+
+    #新增企管系支援的課程
+    financial_insert_df = pd.concat([financial_insert_df , manage_df.loc[manage_df["Course Title"].str.contains("Introduction to Business") & manage_df["Remarks"].str.contains("Finance and Banking")]] , axis = 0 , ignore_index = True)
+    accounting_insert_df = pd.concat([accounting_insert_df , manage_df.loc[manage_df["Course Title"].str.contains("Seminar on Humanistic and Business Ethics") & manage_df["Remarks"].str.contains("Accounting and Information Technology")]] , axis = 0 , ignore_index = True)
+
+    #新增經濟學系支援的課程
+    financial_insert_df = pd.concat([financial_insert_df , eco_df.loc[eco_df["Course Title"].str.contains("Principle of Economics") & eco_df["Remarks"].str.contains("Finance and Banking")]] , axis = 0 , ignore_index = True)
+    financial_insert_df = pd.concat([financial_insert_df , eco_df.loc[eco_df["Course Title"].str.contains("Microeconomics") & eco_df["Remarks"].str.contains("Finance and Banking")]] , axis = 0 , ignore_index = True)
+    accounting_insert_df = pd.concat([accounting_insert_df , eco_df.loc[eco_df["Course Title"].str.contains("Principle of Economics") & eco_df["Remarks"].str.contains("Accounting and Information Technology")]] , axis = 0 , ignore_index = True)
+
+
+    financial_insert_df.drop(['Remarks' , "index"] , axis = 1 , inplace = True)
+    financial_df = pd.concat([financial_df , financial_insert_df] , axis = 0 , ignore_index = True)
+
+    mis_insert_df.drop(['Remarks' , 'index'] , axis = 1 , inplace = True)
+    mis_df = pd.concat([mis_df , mis_insert_df] , axis = 0 , ignore_index = True)
+    
+    ie_insert_df.drop(['Remarks' , 'index'] , axis = 1 , inplace = True)
+    ie_df = pd.concat([ie_df , ie_insert_df] , axis = 0 , ignore_index = True)
+
+    accounting_insert_df.drop(['Remarks' , 'index'] , axis = 1 , inplace = True)
+    accounting_df = pd.concat([accounting_df , accounting_insert_df] , axis = 0 , ignore_index = True)
+
+    financial_df.sort_values(by = ["Year Standing" , "semester"] , ascending = True , inplace = True)
+    mis_df.sort_values(by = ["Year Standing" , "semester"] , ascending = True , inplace = True)
+    ie_df.sort_values(by = ["Year Standing" , "semester"] , ascending = True , inplace = True)
+    accounting_df.sort_values(by = ["Year Standing" , "semester"] , ascending = True , inplace = True)
+
+    return [financial_df , mis_df , ie_df , accounting_df]
+
+
+
+def drop_elective() : 
+    pass
+
+
+
+    
+
+
 def read_file() : 
     path = os.getcwd()
     financial = pd.read_csv(path + "/data/Finance and Banking.csv" , encoding = "big5")
@@ -61,7 +170,7 @@ def read_file() :
 
 def course_overlap() : 
     dpt_df = list(read_file())
-    dpt_name = ["financial" , "mis" , "ie" , "accounting"]
+    #dpt_name = ["financial" , "mis" , "ie" , "accounting"]
     
     for i in dpt_df : 
         i.drop_duplicates("Course Title", inplace = True)
