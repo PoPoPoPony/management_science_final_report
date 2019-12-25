@@ -1,14 +1,16 @@
 ﻿未解決
-讀取順序與寫入順序不同(有時間再回來改)
-hard_insert function內是硬寫file name 的，不是爬取title來定位的(有時間再回來改)
+1. 讀取順序與寫入順序不同(有時間再回來改)
+2. hard_insert function內是硬寫file name 的，不是爬取title來定位的(有時間再回來改)
+3. 經濟系的經濟學原理(一)、(二) (Principle of Economics(I)、Principle of Economics(II))無法使用全名抓取(暫時使用替代方案)
+4. 財金系的統計(一)、(二) 也有同3. 的問題
 
 
 已解決
-資工系的課程名稱後面都會加上 "Program related" 所以只有比對課程名稱時，會比對不出來
-會資系的有些課程有"ⅱ" 符號，將其更換為"ii"
-資工系的課程名稱有句點
-會資系的課程名稱有全形括號，將其轉換成半形括號
-
-
-
-
+1. 資工系的課程名稱後面都會加上 "Program related" 所以只有比對課程名稱時，會比對不出來
+2. 會資系的有些課程有"ⅱ" 符號，將其更換為"ii"
+3. 資工系的課程名稱有句點
+4. 會資系的課程名稱有全形括號，將其轉換成半形括號
+5. 暫時將會資系的 " 微積分(一) " 改為 " 微積分 " 
+6. 經濟系的經濟學原理(一)、(二) (Principle of Economics(I)、Principle of Economics(II)) 手動加入兩者並手動刪除 Principle of Economics(II)
+7. 同樣是系統分析，會資系 : System Analysis and Design，資管系 : System Analysis & Design，傻眼= =
+8. mis_accounting_overlap 缺企業資源規劃，但是因為先不計選修，所以暫不列入計算

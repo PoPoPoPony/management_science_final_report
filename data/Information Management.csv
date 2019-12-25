@@ -1,39 +1,49 @@
-Course ID,Course Title,Credit,Credit type,Day/Period,Remarks,Year Standing,semester
-5301105,Introduction to Computer (Programming Related),3,Required,Mon.C Wed.C,55 preserved for 1st gradersNot available for students from other departments.,1,1
-5301105,Introduction to Computer (Programming Related),3,Required,"Fri.4,5,6",55 preserved for 1st graders; This course is for: Department of Business Administration freshmanA class Not available for students from other departments.,1,1
-5301105,Introduction to Computer (Programming Related),3,Required,"Fri.7,8,9",47 preserved for 1st graders; This course is for: Department of Business Administration freshmanB class Not available for students from other departments.,1,1
-5301105,Introduction to Computer (Programming Related),3,Required,"Fri.4,5,6",75 preserved for 1st graders; This course is for: Department of Economics freshmanNot available for students from other departments.,1,1
-5301105,Introduction to Computer (Programming Related),3,Required,"Fri.7,8,9",70 preserved for 1st graders; This course is for: Department of Finance and Banking freshmanNot available for students from other departments.,1,1
-5301105,Introduction to Computer (Programming Related),3,Required,"Tue.7,8,9",50 preserved for 1st graders; This course is for: Department of Accounting and Information Technology freshmanNot available for students from other departments.,1,1
-5301214,Object-Oriented Technology (I)-JAVA (English-taught) (Programming Related),3,Required,"Tue.4 Thur.4,5,6","55 preserved for 1st gradersNot available for students from other departments. ,Included in Computer Programming Program ,Included in Artificial Intelligence and Computer Auditing",1,1
-5301213,Discrete Mathematics,3,Elective,"Fri.7,8,9",",Included in Computer Programming Program",1,2
-5301216,Program Design,3,Required,"Tue.10,11 Thur.10,11","Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Artificial Intelligence and Computer Auditing ,Included in Software Engineering Program",1,2
-5301217,Introduction to Information Management (English-taught),3,Required,Tue.C Thur.C,Prerequisite Courses: (5301105)Introduction to Computer(taken) Not available for students from other departments.,1,2
-2101010,Calculus,4,Required,"Mon.4,5 Wed.4,5 Thur.6",,1,2
-5302203,Data Structure,3,Required,"Tue.8,9 Thur.8,9","Prerequisite Courses: (5301216)Program Design(taken) Not available for students from other departments. ,Included in Software Engineering Program ,Included in Computer Programming Program ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing",2,1
-5302217,Object-Oriented Technology (II)-.NET (Programming Related),3,Elective,"Fri.4,5,6",Not available for students from other departments.,2,1
-5302218,Law in Science and Technology,3,Required,Mon.E Fri.E,"Not available for students from other departments. ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing",2,1
-5302115,Medical Information System,3,Elective,"Mon.7,8,9",,2,2
-5302202,Database Management,3,Required,"Tue.8,9 Thur.8,9","Prerequisite Courses: (5301105)Introduction to Computer(passed) Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Computer Programming Program ,Included in Big Data and Data sciences ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing",2,2
-5302205,Business Data Communication (English-taught),3,Required,Mon.H Wed.H,"Prerequisite Courses: (5301214)Object-Oriented Technology (I)-JAVA(taken) (5302203)Data Structure(taken) (All must be satisfied)Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Information Security Program",2,2
-5302219,Business Software Applications and Design,3,Required,"Mon.4,5,6",This course is for: Department of Finance and Banking junior資管系同學不得選修,3,1
-5303101,Introduction to Management Sciences,3,Elective,"Mon.7,8 Wed.7",Not available for students from other departments.,3,1
-5303102,System Analysis & Design,3,Required,Tue.G Thur.G,"Not available for students from other departments. ,Included in Software Engineering Program ,Included in Artificial Intelligence and Computer Auditing",3,1
-5303210,Information Security (English-taught),3,Elective,Tue.F Thur.F,"Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Information Security Program ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing",3,1
-5303224,Management for Healthcare Organizations (English-taught),3,Elective,"Mon.9 Wed.8,9",Not available for students from other departments.,3,1
-5303227,Electronic Commerce,3,Required,Tue.C Thur.C,"Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Fintech Program",3,1
-5303228,Operating System (Programming Related),3,Elective,"Fri.7,8,9",Not available for students from other departments.,3,1
-5303229,Project Development I,2,Required,Mon.1 Wed.1,"Not available for students from other departments. ,Included in Electronic Commerce Program本課程為資管系畢業專題，故限本系生修",3,1
-5303233,Project Development (II),2,Required,Tue.1 Thur.1,"Not available for students from other departments. ,Included in Electronic Commerce Program本課程為畢業專題製作，故限本系生修",3,1
-5303111,Internet Marketing,3,Elective,"Mon.9 Wed.8,9","Not available for students from other departments. ,Included in Electronic Commerce Program",3,2
-5303213,Accounting Information System,3,Elective,"Mon.7,8 Wed.7","Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Software Engineering Program ,Included in Artificial Intelligence and Computer Auditing",3,2
-5303216,Artificial Intelligence and Expert Systems,3,Elective,"Fri.4,5,6","Not available for students from other departments. ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing",3,2
-5303221,Medical Marketing Research,3,Elective,Tue.G Thur.G,,3,2
-5303222,Multimedia Systems (English-taught),3,Elective,Tue.C Thur.C,Not available for students from other departments.,3,2
-5303225,Health Insurance,3,Elective,Mon.G Fri.G,,3,2
-5303229,Project Development I,2,Required,Mon.1 Wed.1,"Not available for students from other departments. ,Included in Electronic Commerce Program本課程為本系畢業專題製作之課程，故限本系生修",3,2
-5303233,Project Development (II),2,Required,Tue.1 Thur.1,"Not available for students from other departments. ,Included in Electronic Commerce Program本課程為畢業專題製作，故限本系生修",3,2
-5303240,MIS Project Management,3,Elective,"Mon.9 Wed.8,9",Not available for students from other departments.,3,2
-5303241,Finance Technology (English-taught),3,Elective,Mon.F Wed.F,,3,2
-5304219,Strategic Information Management (English-taught),3,Required,Mon.G Wed.G,Not available for students from other departments.,4,1
-5304223,Collaborative Commerce,3,Elective,"Mon.7,8,9",,4,2
+Course ID,Course Title,Credit,Credit type,Day/Period,Year Standing,semester
+5301105,Introduction to Computer (Programming Related),3,Required,Mon.C Wed.C,1,1
+5301105,Introduction to Computer (Programming Related),3,Required,"Fri.4,5,6",1,1
+5301105,Introduction to Computer (Programming Related),3,Required,"Fri.7,8,9",1,1
+5301105,Introduction to Computer (Programming Related),3,Required,"Fri.4,5,6",1,1
+5301105,Introduction to Computer (Programming Related),3,Required,"Fri.7,8,9",1,1
+5301105,Introduction to Computer (Programming Related),3,Required,"Tue.7,8,9",1,1
+5301214,Object-Oriented Technology (I)-JAVA (English-taught) (Programming Related),3,Required,"Tue.4 Thur.4,5,6",1,1
+5201001,Introduction to Business,3,Required,"Wed.7,8,9",1,1
+5101001,Principle of Economics (I),3,Required,"Tue.8,9 Thur.8,9",1,1
+5261104,Accounting (I),3,Required,"Tue.10,11,12 Thur.10",1,1
+5301213,Discrete Mathematics,3,Elective,"Fri.7,8,9",1,2
+5301216,Program Design,3,Required,"Tue.10,11 Thur.10,11",1,2
+5301217,Introduction to Information Management (English-taught),3,Required,Tue.C Thur.C,1,2
+2101010,Calculus,4,Required,"Mon.4,5 Wed.4,5 Thur.6",1,2
+5302203,Data Structure,3,Required,"Tue.8,9 Thur.8,9",2,1
+5302217,Object-Oriented Technology (II)-.NET (Programming Related),3,Elective,"Fri.4,5,6",2,1
+5302218,Law in Science and Technology,3,Required,Mon.E Fri.E,2,1
+5152020,Statistics (I),3,Required,"Tue.7 Thur.7,8,9",2,1
+5152020,Statistics (I),3,Required,"Wed.7,8,9 Fri.7",2,1
+5152020,Statistics (I),3,Required,"Tue.6 Thur.4,5,6",2,1
+5302115,Medical Information System,3,Elective,"Mon.7,8,9",2,2
+5302202,Database Management,3,Required,"Tue.8,9 Thur.8,9",2,2
+5302205,Business Data Communication (English-taught),3,Required,Mon.H Wed.H,2,2
+5152021,Statistics (II),3,Required,"Tue.7 Thur.7,8,9",2,2
+5152021,Statistics (II),3,Required,"Wed.7,8,9 Fri.7",2,2
+5152021,Statistics (II),3,Required,"Tue.6 Thur.4,5,6",2,2
+5302219,Business Software Applications and Design,3,Required,"Mon.4,5,6",3,1
+5303101,Introduction to Management Sciences,3,Elective,"Mon.7,8 Wed.7",3,1
+5303102,System Analysis & Design,3,Required,Tue.G Thur.G,3,1
+5303210,Information Security (English-taught),3,Elective,Tue.F Thur.F,3,1
+5303224,Management for Healthcare Organizations (English-taught),3,Elective,"Mon.9 Wed.8,9",3,1
+5303227,Electronic Commerce,3,Required,Tue.C Thur.C,3,1
+5303228,Operating System (Programming Related),3,Elective,"Fri.7,8,9",3,1
+5303229,Project Development I,2,Required,Mon.1 Wed.1,3,1
+5303233,Project Development (II),2,Required,Tue.1 Thur.1,3,1
+5303111,Internet Marketing,3,Elective,"Mon.9 Wed.8,9",3,2
+5303213,Accounting Information System,3,Elective,"Mon.7,8 Wed.7",3,2
+5303216,Artificial Intelligence and Expert Systems,3,Elective,"Fri.4,5,6",3,2
+5303221,Medical Marketing Research,3,Elective,Tue.G Thur.G,3,2
+5303222,Multimedia Systems (English-taught),3,Elective,Tue.C Thur.C,3,2
+5303225,Health Insurance,3,Elective,Mon.G Fri.G,3,2
+5303229,Project Development I,2,Required,Mon.1 Wed.1,3,2
+5303233,Project Development (II),2,Required,Tue.1 Thur.1,3,2
+5303240,MIS Project Management,3,Elective,"Mon.9 Wed.8,9",3,2
+5303241,Finance Technology (English-taught),3,Elective,Mon.F Wed.F,3,2
+5203084,Business Ethics,2,Required,"Mon.4,5",3,2
+5304219,Strategic Information Management (English-taught),3,Required,Mon.G Wed.G,4,1
+5304223,Collaborative Commerce,3,Elective,"Mon.7,8,9",4,2

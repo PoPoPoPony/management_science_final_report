@@ -118,47 +118,65 @@ def hard_insert() :
     financial_insert_df = math_df.loc[math_df["Course Title"].str.contains("Calculus") & math_df["Remarks"].str.contains("Finance and Banking")]
     accounting_insert_df = math_df.loc[math_df["Course Title"].str.contains("Calculus") & math_df["Remarks"].str.contains("Accounting and Information Technology")]
 
+
     #新增企管系支援的課程
     financial_insert_df = pd.concat([financial_insert_df , manage_df.loc[manage_df["Course Title"].str.contains("Introduction to Business") & manage_df["Remarks"].str.contains("Finance and Banking")]] , axis = 0 , ignore_index = True)
     accounting_insert_df = pd.concat([accounting_insert_df , manage_df.loc[manage_df["Course Title"].str.contains("Seminar on Humanistic and Business Ethics") & manage_df["Remarks"].str.contains("Accounting and Information Technology")]] , axis = 0 , ignore_index = True)
+    mis_insert_df = pd.concat([mis_insert_df , manage_df.loc[manage_df["Course Title"].str.contains("Introduction to Business") & manage_df["Remarks"].str.contains("Information Management")]] , axis = 0 , ignore_index = True)
+    mis_insert_df = pd.concat([mis_insert_df , manage_df.loc[manage_df["Course Title"].str.contains("Business Ethics") & manage_df["Remarks"].str.contains("Information Management")]] , axis = 0 , ignore_index = True)
 
     #新增經濟學系支援的課程
     financial_insert_df = pd.concat([financial_insert_df , eco_df.loc[eco_df["Course Title"].str.contains("Principle of Economics") & eco_df["Remarks"].str.contains("Finance and Banking")]] , axis = 0 , ignore_index = True)
     financial_insert_df = pd.concat([financial_insert_df , eco_df.loc[eco_df["Course Title"].str.contains("Microeconomics") & eco_df["Remarks"].str.contains("Finance and Banking")]] , axis = 0 , ignore_index = True)
     accounting_insert_df = pd.concat([accounting_insert_df , eco_df.loc[eco_df["Course Title"].str.contains("Principle of Economics") & eco_df["Remarks"].str.contains("Accounting and Information Technology")]] , axis = 0 , ignore_index = True)
+    mis_insert_df = pd.concat([mis_insert_df , eco_df.loc[eco_df["Course Title"].str.contains("Principle of Economics") & eco_df["Remarks"].str.contains("Information Management")]] , axis = 0 , ignore_index = True)
 
     #新增資管系支援的課程
     accounting_insert_df = pd.concat([accounting_insert_df , mis_df.loc[mis_df["Course Title"].str.contains("Introduction to Computer") & mis_df["Remarks"].str.contains("Accounting and Information Technology")]] , axis = 0 , ignore_index = True)
 
     #新增財金系的支援課程
     accounting_insert_df = pd.concat([accounting_insert_df , financial_df.loc[financial_df["Course Title"].str.contains("Statistics") & financial_df["Remarks"].str.contains("Accounting and Information Technology")]] , axis = 0 , ignore_index = True)
-
-
-
-
-
-
-    #會資系沒有微積分?
+    mis_insert_df = pd.concat([mis_insert_df , financial_df.loc[financial_df["Course Title"].str.contains("Statistics") & financial_df["Remarks"].str.contains("Information Management")]] , axis = 0 , ignore_index = True)
+    
+    #新增會資系支援的課程
+    mis_insert_df = pd.concat([mis_insert_df , accounting_df.loc[accounting_df["Course Title"].str.contains("Accounting") & accounting_df["Remarks"].str.contains("Information Management")]] , axis = 0 , ignore_index = True)
 
     financial_insert_df.drop(['Remarks' , "index"] , axis = 1 , inplace = True)
+    financial_df.drop("Remarks" , axis = 1 , inplace = True)
     financial_df = pd.concat([financial_df , financial_insert_df] , axis = 0 , ignore_index = True)
 
     mis_insert_df.drop(['Remarks' , 'index'] , axis = 1 , inplace = True)
+    mis_df.drop("Remarks" , axis = 1 , inplace = True)
     mis_df = pd.concat([mis_df , mis_insert_df] , axis = 0 , ignore_index = True)
     
     ie_insert_df.drop(['Remarks' , 'index'] , axis = 1 , inplace = True)
+    ie_df.drop("Remarks" , axis = 1 , inplace = True)
     ie_df = pd.concat([ie_df , ie_insert_df] , axis = 0 , ignore_index = True)
 
-    accounting_insert_df.drop(['Remarks'] , axis = 1 , inplace = True)
-    accounting_df = pd.concat([accounting_df , accounting_insert_df] , axis = 0 , ignore_index = True)
+    accounting_insert_df.drop(['Remarks' , 'index'] , axis = 1 , inplace = True)
 
+    #手動刪除會資系的 Principle of Economics(II)
+    accounting_insert_df.drop(accounting_insert_df[accounting_insert_df["Course ID"] == 5101002].index , axis = 0 , inplace = True)
+    accounting_df.drop("Remarks" , axis = 1 , inplace = True)
+    accounting_df = pd.concat([accounting_df , accounting_insert_df] , axis = 0 , ignore_index = True ,  sort = True)
+
+    #按照年級和學期排列
     financial_df.sort_values(by = ["Year Standing" , "semester"] , ascending = True , inplace = True)
     mis_df.sort_values(by = ["Year Standing" , "semester"] , ascending = True , inplace = True)
     ie_df.sort_values(by = ["Year Standing" , "semester"] , ascending = True , inplace = True)
     accounting_df.sort_values(by = ["Year Standing" , "semester"] , ascending = True , inplace = True)
 
-    new_df_lst = [ie_df , financial_df , accounting_df , mis_df]
 
+
+
+    #對個別可以抵免的課程進行特殊處理
+    #會資系的微積分先暫定變成微積分(微積分(一) -> 微積分) (取消)
+    #會資系的統計學先暫定變成統計學(一) (方便比對)
+    #accounting_df.loc[accounting_df["Course Title"] == "Calculus (I)" , "Course Title"] = "Calculus"
+    
+    accounting_df.loc[accounting_df["Course Title"] == "Statistics" , "Course Title"] = "Statistics (I)"
+
+    new_df_lst = [ie_df , financial_df , accounting_df , mis_df]
     output.write_csv(new_df_lst)
 
 #丟棄選修課，只留必修課，回傳課程df的list
@@ -166,7 +184,6 @@ def drop_elective() :
     dpt_df_lst = read_file()
     for i in range(len(dpt_df_lst)) : 
         dpt_df_lst[i] = dpt_df_lst[i].loc[dpt_df_lst[i]["Credit type"] == "Required"]
-
     return dpt_df_lst
 
 #讀取前面做好的csv，讀取順序 : 財金系 -> 資管系 -> 資工系 -> 會資系，回傳課程df的list
@@ -184,7 +201,6 @@ def read_file() :
 #計算資管系與其他系所的課程重疊率
 def course_overlap() : 
     dpt_df_lst = drop_elective()
-    print(dpt_df_lst[3])
     #dpt_name = ["financial" , "mis" , "ie" , "accounting"]
     course_lst = course_title_procedure(dpt_df_lst)
 
@@ -209,21 +225,14 @@ def course_overlap() :
     for i in mis_course : 
         if i in financial_course : 
             mis_financial_overlap += 1
-            print("fin : {}".format(i))
         if i in ie_course : 
             mis_ie_overlap += 1
-            print("ie : {}".format(i))
         if i in accounting_course : 
             mis_accounting_overlap += 1
-            print("ac : {}".format(i))
     
     mis_financial_ratio = mis_financial_overlap / (len(mis_course) + len(financial_course) - mis_financial_overlap)
     mis_ie_ratio = mis_ie_overlap / (len(mis_course) + len(ie_course) - mis_ie_overlap)
     mis_accounting_ratio = mis_accounting_overlap / (len(mis_course) + len(accounting_course) - mis_accounting_overlap)
-
-    print(mis_financial_overlap)
-    print(mis_ie_overlap)
-    print(mis_accounting_overlap)
 
     print(mis_financial_ratio)
     print(mis_ie_ratio)
@@ -234,55 +243,27 @@ def course_overlap() :
 
 #處理課程名稱，將其盡量統一格式
 def course_title_procedure(dpt_df_lst) : 
+    course_lst = []
 
-    financial_course = dpt_df_lst[0]['Course Title'].to_list()
-    mis_course = dpt_df_lst[1]['Course Title'].to_list()
-    ie_course = dpt_df_lst[2]['Course Title'].to_list()
-    accounting_course = dpt_df_lst[3]['Course Title'].to_list()
-    
-    course_lst = [financial_course , mis_course , ie_course , accounting_course]
+    for i in dpt_df_lst : 
+        course_lst.append(i['Course Title'].to_list())
 
-    #統一處理部分
+    #統一處理的部分
     for i in range(len(course_lst)) : 
         for j in range(len(course_lst[i])) : 
             course_lst[i][j] = course_lst[i][j].replace(" " , "")
             course_lst[i][j] = course_lst[i][j].lower()
-
-    #個別處理部分
-    financial_course = course_lst[0]
-    mis_course = course_lst[1]
-    ie_course = course_lst[2]
-    accounting_course = course_lst[3]
-    
-    #資工系
-    for i in range(len(ie_course)) : 
-        if "(programmingrelated)" in ie_course[i] : 
-            ie_course[i] = ie_course[i][ : -20]
-        ie_course[i] = ie_course[i].replace("." , "")
- 
-    #財金系
-    for i in range(len(financial_course)) : 
-        if "(programmingrelated)" in financial_course[i] : 
-            financial_course[i] = financial_course[i][ : -20]
-
-    #資管系
-    for i in range(len(mis_course)) : 
-        if "(programmingrelated)" in mis_course[i] : 
-            mis_course[i] = mis_course[i][ : -20]
-
-        if "(english-taught)" in mis_course[i] : 
-            mis_course[i] = mis_course[i][ : -16]
-
-    #會資系
-    for i in range(len(accounting_course)) : 
-        if "ⅱ" in accounting_course[i] : 
-            accounting_course[i] = accounting_course[i].replace("ⅱ" , "ii")
-
-        if "（" in accounting_course[i] : 
-            accounting_course[i] = accounting_course[i].replace("（" , "(")
-            accounting_course[i] = accounting_course[i].replace("）" , ")")
-
-    for i in course_lst : 
-        print(len(i))
+            course_lst[i][j] = course_lst[i][j].replace("." , "")
+            if "(programmingrelated)" in course_lst[i][j] : 
+                course_lst[i][j] = course_lst[i][j][ : -20]
+            if "(english-taught)" in course_lst[i][j] : 
+                course_lst[i][j] = course_lst[i][j][ : -16]
+            if "ⅱ" in course_lst[i][j] : 
+                course_lst[i][j] = course_lst[i][j].replace("ⅱ" , "ii")
+            if "（" in course_lst[i][j] : 
+                course_lst[i][j] = course_lst[i][j].replace("（" , "(")
+                course_lst[i][j] = course_lst[i][j].replace("）" , ")")
+            if "&" in course_lst[i][j] : 
+                course_lst[i][j] = course_lst[i][j].replace("&" , "and")
 
     return course_lst
