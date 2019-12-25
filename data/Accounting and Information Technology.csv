@@ -1,47 +1,49 @@
-Year Standing,Course ID,Course Title,Credit,Credit type,Day/Period,semester
-1,5261101,Accounting (I),3,Required,"Wed.7,8,9 Fri.7",1
-1,5261104,Accounting (I),3,Required,"Tue.10,11 Thur.10,11",1
-1,5261104,Accounting (I),3,Required,"Mon.7,8,9 Fri.7",1
-1,5261104,Accounting (I),3,Required,"Tue.7,8 Thur.7,8",1
-1,5261104,Accounting (I),3,Required,"Tue.7,8,9 Thur.7",1
-1,5261104,Accounting (I),3,Required,"Tue.10,11,12 Thur.10",1
-1,2101003,Calculus (I),3,Required,Mon.C Wed.C Thur.6,1
-1,2101003,Calculus (I),3,Required,Mon.C Wed.C Thur.6,1
-1,5101001,Principle of Economics (I),3,Required,"Tue.4,5 Thur.4,5",1
-1,5261102,Accounting (Ⅱ),3,Required,"Wed.7,8,9 Fri.7",2
-1,5261105,Accounting (II),3,Required,"Tue.10,11 Thur.10,11",2
-1,5261105,Accounting (II),3,Required,"Mon.7,8,9 Fri.7",2
-1,5261105,Accounting (II),3,Elective,"Tue.7,8 Thur.7,8",2
-1,5261105,Accounting (II),3,Required,"Tue.7,8,9 Thur.7",2
-1,5261610,Civil Law,3,Required,"Mon.12,13,14",2
-1,5261611,Business Software Applications and Design,3,Elective,"Wed.4,5,6",2
-1,5261612,Introduction to Programming in Python (Programming Related),3,Elective,"Tue.7,8,9",2
-1,5101002,Principle of Economics (II),3,Required,"Tue.4,5 Thur.4,5",2
-2,5262100,Intermediate Accounting (I),4,Required,"Tue.7,8,9 Thur.7,8,9",1
-2,5262103,Intermediate Accounting (I),3,Elective,"Mon.4,5,6 Fri.4",1
-2,5262108,Commercial Law,3,Required,"Mon.12,13,14",1
-2,5262207,Purchasing Management,3,Elective,"Thur.12,13,14",1
-2,5262211,Information security and management,3,Elective,"Wed.10,11,12",1
-2,5262601,Database Management,3,Required,"Wed.7,8,9",1
-2,5263504,tax law,3,Required,"Wed.3,4,5",1
-2,5262101,Intermediate Accounting (II),4,Required,"Tue.7,8,9 Thur.7,8,9",2
-2,5262104,Intermediate Accounting (II),3,Elective,"Mon.4,5,6 Fri.4",2
-2,5262106,Cost and Management Accounting (I),3,Required,"Mon.5 Fri.4,5,6",2
-2,5262212,Big Data Analysis and Business Intelligent (Programming Related),3,Elective,"Thur.10,11,12",2
-2,5262300,System Analysis and Design,3,Required,"Mon.7,8,9",2
-2,5263204,The Law of Accounting and Auditing,3,Elective,"Fri.7,8,9",2
-3,5263001,Intermediate Accounting (III),4,Required,"Tue.4,5,6 Thur.4,5,6",1
-3,5263003,Accounting and Auditing Practice,3,Elective,"Thur.9,10,11",1
-3,5263100,Cost and Management Accounting (I),3,Elective,"Mon.10 Wed.10,11,12",1
-3,5263102,Advanced Accounting (I),3,Required,"Mon.10,11,12 Wed.10",1
-3,5263106,Cost and Management Accounting (II),3,Required,"Mon.5 Fri.4,5,6",1
-3,5263605,Enterprise Resource Planning,3,Required,"Fri.7,8,9",1
-3,5263106,Cost and Management Accounting (II),3,Elective,"Mon.10 Wed.10,11,12",2
-3,5263108,Advanced Accounting（II）,3,Required,"Mon.10,11,12 Wed.10",2
-3,5263109,Auditing (I),3,Required,"Fri.10,11,12,13",2
-3,5263612,Big data and data analysis (Programming Related),3,Elective,"Wed.7,8,9",2
-4,5264001,Auditing (Ⅱ),3,Required,"Fri.10,11,12,13",1
-4,5264002,Financial Statement Analysis,3,Required,"Fri.7,8,9",1
-4,5264019,Computer auditing,3,Required,"Wed.4,5,6",1
-4,5204089,Seminar on Humanistic and Business Ethics,2,Required,"Mon.7,8",1
-4,5264004,Accounting Information Systems,3,Required,"Mon.7,8 Wed.7",2
+Course ID,Course Title,Credit,Credit type,Day/Period,Remarks,Year Standing,index,semester
+5261101,Accounting (I),3,Required,"Wed.7,8,9 Fri.7","55 preserved for 1st gradersNot available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,1
+5261104,Accounting (I),3,Required,"Tue.10,11 Thur.10,11","60 preserved for 1st graders; This course is for: Department of Economics freshmanA class Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,1
+5261104,Accounting (I),3,Required,"Mon.7,8,9 Fri.7","60 preserved for 1st graders; This course is for: Department of Economics freshmanB class Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,1
+5261104,Accounting (I),3,Required,"Tue.7,8 Thur.7,8","50 preserved for 1st graders; This course is for: Department of Business Administration freshmanA class Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,1
+5261104,Accounting (I),3,Required,"Tue.7,8,9 Thur.7","40 preserved for 1st graders; This course is for: Department of Finance and Banking freshmanNot available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,1
+5261104,Accounting (I),3,Required,"Tue.10,11,12 Thur.10","50 preserved for 1st graders; This course is for: Department of Information Management freshmanNot available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,1
+2101003,Calculus (I),3,Required,Mon.C Wed.C Thur.6,,1,7.0,1
+2101003,Calculus (I),3,Required,Mon.C Wed.C Thur.6,,1,8.0,1
+5101001,Principle of Economics (I),3,Required,"Tue.4,5 Thur.4,5",,1,6.0,1
+5301105,Introduction to Computer (Programming Related),3,Required,"Tue.7,8,9",,1,,1
+5261102,Accounting (Ⅱ),3,Required,"Wed.7,8,9 Fri.7","Prerequisite Courses: (5261101)Accounting (I)(taken) (5261104)Accounting (I)(taken) (One of which satisfied)Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,2
+5261105,Accounting (II),3,Required,"Tue.10,11 Thur.10,11","Prerequisite Courses: (5261101)Accounting (I)(taken) (5261104)Accounting (I)(taken) (One of which satisfied) This course is for: Department of Economics freshmanA class Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,2
+5261105,Accounting (II),3,Required,"Mon.7,8,9 Fri.7","Prerequisite Courses: (5261104)Accounting (I)(taken) (5261101)Accounting (I)(taken) (One of which satisfied) This course is for: Department of Economics freshmanB class Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,2
+5261105,Accounting (II),3,Elective,"Tue.7,8 Thur.7,8","Prerequisite Courses: (5261101)Accounting (I)(taken) (5261104)Accounting (I)(taken) (One of which satisfied) This course is for: Department of Business Administration freshmanA class Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,2
+5261105,Accounting (II),3,Required,"Tue.7,8,9 Thur.7","Prerequisite Courses: (5261104)Accounting (I)(taken) (5261101)Accounting (I)(taken) (One of which satisfied) This course is for: Department of Finance and Banking freshmanA class B class Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,2
+5261610,Civil Law,3,Required,"Mon.12,13,14",Not available for students from other departments.,1,,2
+5261611,Business Software Applications and Design,3,Elective,"Wed.4,5,6",Not available for students from other departments.,1,,2
+5261612,Introduction to Programming in Python (Programming Related),3,Elective,"Tue.7,8,9","Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",1,,2
+5101002,Principle of Economics (II),3,Required,"Tue.4,5 Thur.4,5",,1,6.0,2
+5262100,Intermediate Accounting (I),4,Required,"Tue.7,8,9 Thur.7,8,9",Prerequisite Courses: (5261101)Accounting (I)(taken) (5261102)Accounting II(taken) (All must be satisfied)Not available for students from other departments.修習5261104初級會計學(一)及5261105初級會計學(二)者請以加簽方式選課,2,,1
+5262103,Intermediate Accounting (I),3,Elective,"Mon.4,5,6 Fri.4",This course is for: Department of Finance and Banking sophomoreA class B class Not available for students from other departments.,2,,1
+5262108,Commercial Law,3,Required,"Mon.12,13,14",Not available for students from other departments.,2,,1
+5262207,Purchasing Management,3,Elective,"Thur.12,13,14",Not available for students from other departments.,2,,1
+5262211,Information security and management,3,Elective,"Wed.10,11,12",Not available for students from other departments.,2,,1
+5262601,Database Management,3,Required,"Wed.7,8,9","Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Big Data and Data sciences ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing",2,,1
+5263504,tax law,3,Required,"Wed.3,4,5",Not available for students from other departments.,2,,1
+5262101,Intermediate Accounting (II),4,Required,"Tue.7,8,9 Thur.7,8,9",Prerequisite Courses: (5261101)Accounting (I)(passed) (5262100)Intermediate Accounting (I)(taken) (All must be satisfied)Not available for students from other departments.,2,,2
+5262104,Intermediate Accounting (II),3,Elective,"Mon.4,5,6 Fri.4",Prerequisite Courses: (5262103)Intermediate Accounting (I)(taken) This course is for: Department of Finance and Banking sophomoreA class B class Not available for students from other departments.,2,,2
+5262106,Cost and Management Accounting (I),3,Required,"Mon.5 Fri.4,5,6",Prerequisite Courses: (5261101)Accounting (I)(passed) (5261102)Accounting II(passed) (All must be satisfied)Not available for students from other departments.修習「5261104/初級會計學(一)」、「5261105/初級會計學(二)」之學生請以加簽方式進行選修,2,,2
+5262212,Big Data Analysis and Business Intelligent (Programming Related),3,Elective,"Thur.10,11,12","Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",2,,2
+5262300,System Analysis and Design,3,Required,"Mon.7,8,9","Not available for students from other departments. ,Included in Artificial Intelligence and Computer Auditing",2,,2
+5263204,The Law of Accounting and Auditing,3,Elective,"Fri.7,8,9",Not available for students from other departments.,2,,2
+5152022,Statistics,3,Required,"Fri.3,4,5",,2,,2
+5263001,Intermediate Accounting (III),4,Required,"Tue.4,5,6 Thur.4,5,6",Prerequisite Courses: (5262100)Intermediate Accounting (I)(passed) (5262101)Intermediate Accounting (II)(passed) (All must be satisfied)Not available for students from other departments.,3,,1
+5263003,Accounting and Auditing Practice,3,Elective,"Thur.9,10,11",Not available for students from other departments.,3,,1
+5263100,Cost and Management Accounting (I),3,Elective,"Mon.10 Wed.10,11,12",This course is for: Department of Finance and Banking juniorA class B class Not available for students from other departments.,3,,1
+5263102,Advanced Accounting (I),3,Required,"Mon.10,11,12 Wed.10",Prerequisite Courses: (5261101)Accounting (I)(passed) (5261105)Accounting (II)(passed) (All must be satisfied)Not available for students from other departments.修習5261104初級會計學(一)及5261102初級會計學(二)及格者請以加簽方式進行選課,3,,1
+5263106,Cost and Management Accounting (II),3,Required,"Mon.5 Fri.4,5,6",Prerequisite Courses: (5261101)Accounting (I)(passed) (5261105)Accounting (II)(passed) (All must be satisfied)Not available for students from other departments.修習5261104初級會計學(一)及5261102初級會計學(二)及格者請以加簽方式進行選課,3,,1
+5263605,Enterprise Resource Planning,3,Required,"Fri.7,8,9","Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Artificial Intelligence and Computer Auditing",3,,1
+5263106,Cost and Management Accounting (II),3,Elective,"Mon.10 Wed.10,11,12",Prerequisite Courses: (5263100)Cost and Management Accounting (I)(taken) This course is for: Department of Finance and Banking juniorA class B class Not available for students from other departments.,3,,2
+5263108,Advanced Accounting（II）,3,Required,"Mon.10,11,12 Wed.10",Prerequisite Courses: (5261101)Accounting (I)(passed) (5261105)Accounting (II)(passed) (All must be satisfied)Not available for students from other departments.修習「5261104/初級會計學(一)」、「5261102/初級會計學(二)」者請以加簽方式進行選修,3,,2
+5263109,Auditing (I),3,Required,"Fri.10,11,12,13",Prerequisite Courses: (5261101)Accounting (I)(passed) (5261105)Accounting (II)(passed) (All must be satisfied)Not available for students from other departments.修習「5261104/初級會計學(一)」、「5261102/初級會計學(二)」者，請以加簽方式進行選修,3,,2
+5263612,Big data and data analysis (Programming Related),3,Elective,"Wed.7,8,9",Not available for students from other departments.,3,,2
+5264001,Auditing (Ⅱ),3,Required,"Fri.10,11,12,13",Prerequisite Courses: (5261104)Accounting (I)(passed) (5261105)Accounting (II)(passed) (All must be satisfied)Not available for students from other departments.修習5261101初級會計學(一)或5261105初級會計學(二)及格者，請以加簽方式進行選課,4,,1
+5264002,Financial Statement Analysis,3,Required,"Fri.7,8,9","Not available for students from other departments. ,Included in Financial Economics Program",4,,1
+5264019,Computer auditing,3,Required,"Wed.4,5,6","Not available for students from other departments. ,Included in Information Security Program ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing",4,,1
+5204089,Seminar on Humanistic and Business Ethics,2,Required,"Mon.7,8",,4,25.0,1
+5264004,Accounting Information Systems,3,Required,"Mon.7,8 Wed.7","Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing",4,,2

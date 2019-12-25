@@ -31,11 +31,12 @@ def get_table(source_lst , semester) :
     
     df_lst = []
 
-    remine_cols = ["Year Standing" , "Course ID" , "Course Title" , "Credit" , "Credit type" , "Day/Period"]
+    remine_cols = ["Year Standing" , "Course ID" , "Course Title" , "Credit" , "Credit type" , "Day/Period" , "Remarks(Might contain Chinese due to course remarks which cannot be translated afterwards)"]
     for i in source_lst : 
         df = pd.read_html(i)
         df = df[0]
         df = df[remine_cols]
+        df.columns = ["Year Standing" , "Course ID" , "Course Title" , "Credit" , "Credit type" , "Day/Period" , "Remarks"]
         df['semester'] = semester
         df_lst.append(df)
 
@@ -127,10 +128,15 @@ def hard_insert() :
     accounting_insert_df = pd.concat([accounting_insert_df , eco_df.loc[eco_df["Course Title"].str.contains("Principle of Economics") & eco_df["Remarks"].str.contains("Accounting and Information Technology")]] , axis = 0 , ignore_index = True)
 
     #新增資管系支援的課程
+    accounting_insert_df = pd.concat([accounting_insert_df , mis_df.loc[mis_df["Course Title"].str.contains("Introduction to Computer") & mis_df["Remarks"].str.contains("Accounting and Information Technology")]] , axis = 0 , ignore_index = True)
 
     #新增財金系的支援課程
+    accounting_insert_df = pd.concat([accounting_insert_df , financial_df.loc[financial_df["Course Title"].str.contains("Statistics") & financial_df["Remarks"].str.contains("Accounting and Information Technology")]] , axis = 0 , ignore_index = True)
 
-    #check資管系
+
+
+
+
 
     #會資系沒有微積分?
 
@@ -141,10 +147,9 @@ def hard_insert() :
     mis_df = pd.concat([mis_df , mis_insert_df] , axis = 0 , ignore_index = True)
     
     ie_insert_df.drop(['Remarks' , 'index'] , axis = 1 , inplace = True)
-
     ie_df = pd.concat([ie_df , ie_insert_df] , axis = 0 , ignore_index = True)
 
-    accounting_insert_df.drop(['Remarks' , 'index'] , axis = 1 , inplace = True)
+    accounting_insert_df.drop(['Remarks'] , axis = 1 , inplace = True)
     accounting_df = pd.concat([accounting_df , accounting_insert_df] , axis = 0 , ignore_index = True)
 
     financial_df.sort_values(by = ["Year Standing" , "semester"] , ascending = True , inplace = True)

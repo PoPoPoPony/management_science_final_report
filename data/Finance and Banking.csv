@@ -1,55 +1,55 @@
-Year Standing,Course ID,Course Title,Credit,Credit type,Day/Period,semester
-1,5151007,Introduction to Computer (Programming Related),3,Required,"Wed.7,8,9",1
-1,5151032,Accounting (I),3,Required,"Tue.4,5,6 Thur.4",1
-1,5201001,Introduction to Business,3,Required,"Fri.4,5,6",1
-1,5101001,Principle of Economics (I),3,Required,"Mon.4,5 Wed.4,5",1
-1,5151008,An Introduction to Civil Law,2,Required,"Thur.10,11",2
-1,5151033,Accounting (II),3,Required,"Tue.7,8,9 Thur.7",2
-1,2101018,Calculus,3,Required,Tue.C Wed.6 Thur.C,2
-1,5101002,Principle of Economics (II),3,Required,"Mon.4,5 Wed.4,5",2
-2,5152020,Statistics (I),3,Required,"Tue.7 Thur.7,8,9",1
-2,5152020,Statistics (I),3,Required,"Wed.7,8,9 Fri.7",1
-2,5152020,Statistics (I),3,Required,"Tue.6 Thur.4,5,6",1
-2,5152092,Commercial Law,2,Required,"Thur.10,11",1
-2,5152100,Financial Management (I),3,Required,"Wed.4,5,6",1
-2,5152100,Financial Management (I),3,Required,"Wed.4,5,6",1
-2,5152100,Financial Management (I) (English-taught),3,Required,"Fri.4,5,6",1
-2,5152100,Financial Management (I),3,Required,"Thur.7,8,9",1
-2,5102103,Microeconomics,3,Required,"Mon.7,8,9",1
-2,5152011,Macroeconomics,3,Required,"Tue.4,5,6",2
-2,5152021,Statistics (II),3,Required,"Tue.7 Thur.7,8,9",2
-2,5152021,Statistics (II),3,Required,"Wed.7,8,9 Fri.7",2
-2,5152021,Statistics (II),3,Required,"Tue.6 Thur.4,5,6",2
-2,5152022,Statistics,3,Required,"Fri.3,4,5",2
-2,5152101,Financial Management (II),3,Required,"Wed.4,5,6",2
-2,5152101,Financial Management (II),3,Required,"Wed.4,5,6",2
-2,5152101,Financial Management (II) (English-taught),3,Required,"Fri.4,5,6",2
-2,5152101,Financial Management (II),3,Elective,"Thur.7,8,9",2
-2,5152102,Financial Management,3,Elective,"Wed.4,5,6",2
-2,5152200,Investments,3,Required,"Thur.4,5,6",2
-2,5152200,Investments,3,Required,"Wed.7,8,9",2
-2,5152200,Investments,3,Required,"Thur.4,5,6",2
-3,5153001,Business Software Application and Design (Programming Related),3,Required,"Fri.4,5,6",1
-3,5153173,Ethics in Finance,3,Required,"Tue.7,8,9",1
-3,5153173,Ethics in Finance,3,Required,"Tue.7,8,9",1
-3,5153300,Financial Markets and Institutions,3,Required,"Wed.10,11,12",1
-3,5153300,Financial Markets and Institutions,3,Required,"Thur.7,8,9",1
-3,5153340,Futures and Options,3,Required,"Tue.4,5,6",1
-3,5153340,Futures and Options,3,Required,"Tue.4,5,6",1
-3,5153110,Analysis of Financial Statements,3,Elective,"Mon.7,8,9",2
-3,5153174,Business Valuation,3,Elective,"Thur.4,5,6",2
-3,5153350,Behavioral Finance,3,Elective,"Wed.7,8,9",2
-3,5154180,International Financial Management,3,Required,"Wed.7,8,9",2
-3,5154180,International Financial Management,3,Required,"Tue.4,5,6",2
-4,5154172,Case Study in Corporate Finance,3,Required,"Tue.4,5,6",1
-4,5154172,Case Study in Corporate Finance,3,Required,"Wed.4,5,6",1
-4,5154210,Portfolio Analysis,3,Elective,"Thur.4,5,6",1
-4,5154317,Big data analysis in finance (Programming Related),3,Elective,"Mon.7,8,9",1
-4,5154320,Investment Banking,3,Elective,"Thur.7,8,9",1
-4,5154441,Principle of Real Estate,3,Elective,"Fri.7,8,9",1
-4,5154700,Practice in Banking and Finance,3,Elective,"Wed.7,8,9",1
-4,5154313,Capital Market and Fund Portfolio Management (English-taught),3,Elective,"Thur.4,5,6",2
-4,5154318,Research seminar in fintech,3,Elective,"Thur.10,11,12",2
-4,5154353,Introduction to Financial Technology,3,Elective,"Thur.7,8,9",2
-4,5154354,Foreign Exchange Markets: Theories and Practices,3,Elective,"Tue.7,8,9",2
-4,5154661,Financial Forecasts,3,Elective,"Fri.4,5,6",2
+Course ID,Course Title,Credit,Credit type,Day/Period,Remarks,Year Standing,semester
+5151007,Introduction to Computer (Programming Related),3,Required,"Wed.7,8,9",45 preserved for 1st gradersNot available for students from other departments.,1,1
+5151032,Accounting (I),3,Required,"Tue.4,5,6 Thur.4",40 preserved for 1st graders; This course is for: Department of Finance and Banking freshmanNot available for students from other departments.限大一學生修,1,1
+5201001,Introduction to Business,3,Required,"Fri.4,5,6",,1,1
+5101001,Principle of Economics (I),3,Required,"Mon.4,5 Wed.4,5",,1,1
+5151008,An Introduction to Civil Law,2,Required,"Thur.10,11",This course is for: Department of Finance and Banking freshmanA class B class Not available for students from other departments.,1,2
+5151033,Accounting (II),3,Required,"Tue.7,8,9 Thur.7",Prerequisite Courses: (5151032)Accounting (I)(taken) (5261020)Accounting (I)(taken) (5261022)Accounting (I)(taken) (5261104)Accounting (I)(taken) (One of which satisfied)Not available for students from other departments.,1,2
+2101018,Calculus,3,Required,Tue.C Wed.6 Thur.C,,1,2
+5101002,Principle of Economics (II),3,Required,"Mon.4,5 Wed.4,5",,1,2
+5152020,Statistics (I),3,Required,"Tue.7 Thur.7,8,9","Prerequisite Courses: (2101001)Calculus (I)(taken) (2101002)Calculus (II)(taken) (2101003)Calculus (I)(taken) (2101004)Calculus (II)(taken) (2101010)Calculus(taken) (2101018)Calculus(taken) (One of which satisfied) This course is for: Department of Finance and Banking Department of Information Management sophomorejuniorseniorNot available for students from other departments. ,Included in Computer Programming Program ,Included in Big Data and Data sciences",2,1
+5152020,Statistics (I),3,Required,"Wed.7,8,9 Fri.7","Prerequisite Courses: (2101001)Calculus (I)(taken) (2101002)Calculus (II)(taken) (2101003)Calculus (I)(taken) (2101004)Calculus (II)(taken) (2101010)Calculus(taken) (2101018)Calculus(taken) (One of which satisfied) This course is for: Department of Finance and Banking Department of Information Management sophomorejuniorseniorNot available for students from other departments. ,Included in Computer Programming Program ,Included in Big Data and Data sciences",2,1
+5152020,Statistics (I),3,Required,"Tue.6 Thur.4,5,6","This course is for: Department of Information Management freshmansophomorejuniorseniorNot available for students from other departments. ,Included in Computer Programming Program ,Included in Big Data and Data sciences支援資管系所",2,1
+5152092,Commercial Law,2,Required,"Thur.10,11",Not available for students from other departments.,2,1
+5152100,Financial Management (I),3,Required,"Wed.4,5,6","Prerequisite Courses: (5151032)Accounting (I)(passed) (5151033)Accounting (II)(passed) (5261017)Accounting (II)(passed) (5261019)Accounting (II)(passed) (5261105)Accounting (II)(passed) (5261104)Accounting (I)(passed) (5261020)Accounting (I)(passed) (5261022)Accounting (I)(passed) (One of which satisfied)Not available for students from other departments. ,Included in Managerial Economics Program ,Included in Financial Economics Program",2,1
+5152100,Financial Management (I),3,Required,"Wed.4,5,6","Prerequisite Courses: (5261017)Accounting (II)(taken) (5261019)Accounting (II)(taken) (5261020)Accounting (I)(taken) (5261022)Accounting (I)(taken) (5261104)Accounting (I)(taken) (5261105)Accounting (II)(taken) (5151032)Accounting (I)(taken) (5151033)Accounting (II)(taken) (One of which satisfied)Not available for students from other departments. ,Included in Managerial Economics Program ,Included in Financial Economics Program",2,1
+5152100,Financial Management (I) (English-taught),3,Required,"Fri.4,5,6","Prerequisite Courses: (5261017)Accounting (II)(taken) (5261019)Accounting (II)(taken) (5261020)Accounting (I)(taken) (5261022)Accounting (I)(taken) (5261104)Accounting (I)(taken) (5261105)Accounting (II)(taken) (5151032)Accounting (I)(taken) (5151033)Accounting (II)(taken) (One of which satisfied)Not available for students from other departments. ,Included in Managerial Economics Program ,Included in Financial Economics Program",2,1
+5152100,Financial Management (I),3,Required,"Thur.7,8,9","This course is for: Department of Economics freshmansophomorejuniorseniorA class B class Not available for students from other departments. ,Included in Managerial Economics Program ,Included in Financial Economics Program",2,1
+5102103,Microeconomics,3,Required,"Mon.7,8,9",,2,1
+5152011,Macroeconomics,3,Required,"Tue.4,5,6",Prerequisite Courses: (5101001)Principle of Economics (I)(taken) (5152020)Statistics (I)(taken) (All must be satisfied) This course is for: Department of Finance and Banking sophomoreNot available for students from other departments.,2,2
+5152021,Statistics (II),3,Required,"Tue.7 Thur.7,8,9","Prerequisite Courses: (5152020)Statistics (I)(taken) This course is for: Department of Finance and Banking Department of Information Management Graduate Institute of Information Management sophomorejuniorseniorA class B class Not available for students from other departments. ,Included in Computer Programming Program ,Included in Big Data and Data sciences",2,2
+5152021,Statistics (II),3,Required,"Wed.7,8,9 Fri.7","Prerequisite Courses: (5152020)Statistics (I)(taken) This course is for: Department of Finance and Banking Department of Information Management Graduate Institute of Information Management sophomorejuniorseniorA class B class Not available for students from other departments. ,Included in Computer Programming Program ,Included in Big Data and Data sciences",2,2
+5152021,Statistics (II),3,Required,"Tue.6 Thur.4,5,6","Prerequisite Courses: (5152020)Statistics (I)(taken) This course is for: Department of Information Management Graduate Institute of Information Management freshmansophomorejuniorseniorNot available for students from other departments. ,Included in Computer Programming Program ,Included in Big Data and Data sciences支援資管系所",2,2
+5152022,Statistics,3,Required,"Fri.3,4,5","This course is for: Department of Accounting and Information Technology freshmansophomorejuniorseniorNot available for students from other departments. ,Included in Computer Programming Program財金系學生不得選修",2,2
+5152101,Financial Management (II),3,Required,"Wed.4,5,6","Prerequisite Courses: (5152100)Financial Management (I)(taken) (5152102)Financial Management(taken) (One of which satisfied)Not available for students from other departments. ,Included in Managerial Economics Program ,Included in Financial Economics Program",2,2
+5152101,Financial Management (II),3,Required,"Wed.4,5,6","Prerequisite Courses: (5152100)Financial Management (I)(taken) (5152102)Financial Management(taken) (One of which satisfied)Not available for students from other departments. ,Included in Managerial Economics Program ,Included in Financial Economics Program",2,2
+5152101,Financial Management (II) (English-taught),3,Required,"Fri.4,5,6","Prerequisite Courses: (5152100)Financial Management (I)(taken) (5152102)Financial Management(taken) (One of which satisfied)Not available for students from other departments. ,Included in Managerial Economics Program ,Included in Financial Economics Program",2,2
+5152101,Financial Management (II),3,Elective,"Thur.7,8,9","Prerequisite Courses: (5152100)Financial Management (I)(taken) (5152102)Financial Management(taken) (One of which satisfied) This course is for: Department of Economics sophomorejuniorseniorNot available for students from other departments. ,Included in Managerial Economics Program ,Included in Financial Economics Program",2,2
+5152102,Financial Management,3,Elective,"Wed.4,5,6","This course is for: Department of Accounting and Information Technology sophomorejuniorseniorNot available for students from other departments. ,Included in Managerial Economics Program ,Included in Financial Economics Program財金系學生不得修習",2,2
+5152200,Investments,3,Required,"Thur.4,5,6","Prerequisite Courses: (5152020)Statistics (I)(taken) (5152100)Financial Management (I)(taken) (All must be satisfied)Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Financial Economics Program ,Included in Fintech Program",2,2
+5152200,Investments,3,Required,"Wed.7,8,9","Prerequisite Courses: (5152020)Statistics (I)(taken) (5152100)Financial Management (I)(taken) (All must be satisfied)Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Financial Economics Program ,Included in Fintech Program",2,2
+5152200,Investments,3,Required,"Thur.4,5,6","Prerequisite Courses: (5152020)Statistics (I)(taken) (5152100)Financial Management (I)(taken) (All must be satisfied)Not available for students from other departments. ,Included in Electronic Commerce Program ,Included in Financial Economics Program ,Included in Fintech Program",2,2
+5153001,Business Software Application and Design (Programming Related),3,Required,"Fri.4,5,6","This course is for: Department of Finance and Banking juniorNot available for students from other departments. ,Included in Program of Economic Analysis on Big Data",3,1
+5153173,Ethics in Finance,3,Required,"Tue.7,8,9",Not available for students from other departments.,3,1
+5153173,Ethics in Finance,3,Required,"Tue.7,8,9",Not available for students from other departments.,3,1
+5153300,Financial Markets and Institutions,3,Required,"Wed.10,11,12","Prerequisite Courses: (5152100)Financial Management (I)(passed) (5152101)Financial Management (II)(passed) (5152102)Financial Management(passed) (One of which satisfied)Not available for students from other departments. ,Included in Financial Economics Program ,Included in Fintech Program",3,1
+5153300,Financial Markets and Institutions,3,Required,"Thur.7,8,9","Prerequisite Courses: (5152100)Financial Management (I)(passed) (5152101)Financial Management (II)(passed) (5152102)Financial Management(passed) (One of which satisfied)Not available for students from other departments. ,Included in Financial Economics Program ,Included in Fintech Program",3,1
+5153340,Futures and Options,3,Required,"Tue.4,5,6","Prerequisite Courses: (5152100)Financial Management (I)(passed) (5152101)Financial Management (II)(passed) (All must be satisfied) This course is for: Department of Finance and Banking juniorA class B class Not available for students from other departments. ,Included in Financial Economics Program",3,1
+5153340,Futures and Options,3,Required,"Tue.4,5,6","This course is for: Department of Finance and Banking juniorA class B class Not available for students from other departments. ,Included in Financial Economics Program",3,1
+5153110,Analysis of Financial Statements,3,Elective,"Mon.7,8,9","Prerequisite Courses: (5152100)Financial Management (I)(passed) (5152101)Financial Management (II)(passed) (All must be satisfied) ,Included in Financial Economics Program",3,2
+5153174,Business Valuation,3,Elective,"Thur.4,5,6",Prerequisite Courses: (5152100)Financial Management (I)(taken) (5152101)Financial Management (II)(taken) (All must be satisfied)Not available for students from other departments.,3,2
+5153350,Behavioral Finance,3,Elective,"Wed.7,8,9",Prerequisite Courses: (5152100)Financial Management (I)(taken) (5152101)Financial Management (II)(taken) (All must be satisfied),3,2
+5154180,International Financial Management,3,Required,"Wed.7,8,9","Prerequisite Courses: (5152100)Financial Management (I)(passed) (5152101)Financial Management (II)(passed) (One of which satisfied)Not available for students from other departments. ,Included in Financial Economics Program",3,2
+5154180,International Financial Management,3,Required,"Tue.4,5,6","Prerequisite Courses: (5152100)Financial Management (I)(passed) (5152101)Financial Management (II)(passed) (One of which satisfied)Not available for students from other departments. ,Included in Financial Economics Program",3,2
+5154172,Case Study in Corporate Finance,3,Required,"Tue.4,5,6",Prerequisite Courses: (5152200)Investments(passed) (5153300)Financial Markets and Institutions(passed) (All must be satisfied) This course is for: Department of Finance and Banking seniorNot available for students from other departments.,4,1
+5154172,Case Study in Corporate Finance,3,Required,"Wed.4,5,6",Prerequisite Courses: (5152200)Investments(passed) (5153300)Financial Markets and Institutions(passed) (All must be satisfied) This course is for: Department of Finance and Banking seniorA class B class Not available for students from other departments.,4,1
+5154210,Portfolio Analysis,3,Elective,"Thur.4,5,6",Not available for students from other departments.,4,1
+5154317,Big data analysis in finance (Programming Related),3,Elective,"Mon.7,8,9","Prerequisite Courses: (5152020)Statistics (I)(passed) (5152021)Statistics (II)(passed) (All must be satisfied)Not available for students from other departments. ,Included in Big Data and Data sciences ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing限大四學生修習",4,1
+5154320,Investment Banking,3,Elective,"Thur.7,8,9",This course is for: Department of Finance and Banking juniorseniorNot available for students from other departments.,4,1
+5154441,Principle of Real Estate,3,Elective,"Fri.7,8,9",Not available for students from other departments.,4,1
+5154700,Practice in Banking and Finance,3,Elective,"Wed.7,8,9",Prerequisite Courses: (5152100)Financial Management (I)(passed) (5152101)Financial Management (II)(passed) (5152021)Statistics (II)(passed) (5152200)Investments(passed) (All must be satisfied) This course is for: Department of Finance and Banking juniorseniorNot available for students from other departments.,4,1
+5154313,Capital Market and Fund Portfolio Management (English-taught),3,Elective,"Thur.4,5,6",Prerequisite Courses: (5153300)Financial Markets and Institutions(passed),4,2
+5154318,Research seminar in fintech,3,Elective,"Thur.10,11,12",Not available for students from other departments.,4,2
+5154353,Introduction to Financial Technology,3,Elective,"Thur.7,8,9","Not available for students from other departments. ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing",4,2
+5154354,Foreign Exchange Markets: Theories and Practices,3,Elective,"Tue.7,8,9",,4,2
+5154661,Financial Forecasts,3,Elective,"Fri.4,5,6","Prerequisite Courses: (5152101)Financial Management (II)(taken) (5152021)Statistics (II)(taken) (All must be satisfied) ,Included in Financial Economics Program ,Included in Fintech Program ,Included in Artificial Intelligence and Computer Auditing",4,2
