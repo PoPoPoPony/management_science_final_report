@@ -1,73 +1,75 @@
-Year Standing,Course Title,Credit,Credit type,Day/Period,semester
-1,Programming Languages (Programming Related),3,Required,"Mon.F,G",1
-1,Programming Languages (Programming Related),3,Required,Tue.F Thur.F,1
-1,Programming Languages (Programming Related),3,Required,Tue.F Thur.F,1
-1,Introduction to Information Science,2,Required,"Fri.4,5",1
-1,Program Design (I) (Programming Related),3,Required,Tue.E Thur.E,1
-1,Program Design (I) (Programming Related),3,Required,Tue.E Thur.E,1
-1,Quiz Section for Program Design (I) (Programming Related),1,Required,"Mon.13,14",1
-1,Quiz Section for Program Design (I) (Programming Related),1,Required,"Wed.13,14",1
-1,Quiz Section for Program Design (I) (Programming Related),1,Required,"Tue.13,14",1
-1,Quiz Section for Program Design (I) (Programming Related),1,Required,"Thur.13,14",1
-1,Linear Algebra,3,Required,Mon.F Wed.F,1
-1,Linear Algebra,3,Required,Mon.B Wed.B,1
-2,Electronic Circuits and Electronics,3,Required,"Fri.E,F",1
-2,Electronic Circuits and Electronics,3,Required,Tue.B Thur.B,1
-2,Electronic Circuits and Electronics Lab.,1,Required,"Mon.13,14",1
-2,Electronic Circuits and Electronics Lab.,1,Required,"Wed.13,14",1
-2,Probability Theory,3,Required,Tue.E Thur.E,1
-2,Probability Theory,3,Required,Mon.G Wed.G,1
-2,Assembly Language (Programming Related),3,Elective,Mon.C Wed.C,1
-2,Data Structure (Programming Related),3,Required,Tue.F Thur.F,1
-2,Data Structure (Programming Related),3,Required,"Tue.E,F",1
-2,Introduction to Algorithms,3,Required,Tue.G Thur.G,1
-1,Discrete Mathematics,3,Required,Tue.B Thur.B,1
-2,Engineering Mathematics,3,Elective,"Wed.E,F",1
-3,Introduction to Operating System,3,Required,Tue.G Thur.G,1
-3,Introduction to Operating System,3,Required,Tue.F Thur.F,1
-3,Software Engineering(Distant learning),3,Elective,"Wed.E,F",1
-3,Introduction to Multimedia Technology,3,Elective,Tue.E Thur.E,1
-3,Network Programming (Programming Related),3,Elective,Tue.C Thur.C,1
-3,Computer Organization,3,Required,Mon.C Wed.C,1
-3,Computer Organization,3,Required,Tue.B Thur.B,1
-3,Computer Science Seminars,1,Required,"Mon.8,9",1
-3,Engineering Ethics,2,Elective,"Mon.8,9",1
-4,Introduction to Telecommunication Network,3,Elective,Wed.C Fri.C,1
-4,Computer Project (II),2,Required,"Fri.12,13,14,15",1
-4,Computer Project (II),2,Required,"Fri.12,13,14,15",1
-4,Computer Project (II),2,Required,"Fri.12,13,14,15",1
-4,Computer Project (II),2,Required,"Fri.12,13,14,15",1
-4,Computer Project (II),2,Required,"Fri.12,13,14,15",1
-1,Introduction to Computer Science (Programming Related),3,Elective,"Tue.G,H",2
-1,Program Design (II) (Programming Related),3,Required,Tue.C Thur.C,2
-1,Program Design (II) (Programming Related),3,Required,Tue.C Thur.C,2
-1,Quiz Section for Program Design(II) (Programming Related),1,Required,"Mon.13,14",2
-1,Quiz Section for Program Design(II) (Programming Related),1,Required,"Tue.13,14",2
-1,Quiz Section for Program Design(II) (Programming Related),1,Required,"Wed.13,14",2
-1,Quiz Section for Program Design(II) (Programming Related),1,Required,"Thur.13,14",2
-2,Introduction to Algorithms (Programming Related),3,Required,Tue.G Thur.G,2
-2,Introduction to Algorithms (Programming Related),3,Required,Tue.G Thur.G,2
-1,Discrete Mathematics,3,Required,Tue.E Thur.E,2
-1,Discrete Mathematics,3,Required,Tue.B Thur.B,2
-2,Introduction to Digital Systems,3,Required,Mon.G Wed.G,2
-2,Digital Systems Lab.,1,Required,"Mon.13,14",2
-2,Digital Systems Lab.,1,Required,"Wed.13,14",2
-2,Systems Programming (Programming Related),3,Required,"Wed.E,F",2
-2,Systems Programming (Programming Related),3,Required,Tue.F Thur.F,2
-2,Object-Oriented Programming (Programming Related),3,Required,Tue.E Thur.E,2
-2,Object-Oriented Programming (Programming Related),3,Required,Tue.E Thur.E,2
-3,Introduction to Computer Networks,3,Elective,Tue.B Thur.B,2
-3,Numerical Analysis,3,Elective,Tue.C Thur.C,2
-3,Java Programming: Enterprise and Embedded Systems (Programming Related),3,Elective,Mon.B Wed.B,2
-3,Engineering Ethics,2,Elective,"Mon.8,9",2
-3,Compiler Design (Programming Related),3,Required,Mon.C Wed.C,2
-3,Compiler Design (Programming Related),3,Required,Mon.C Wed.C,2
-4,Introductoin To Image Processing,3,Elective,Mon.G Wed.G,2
-4,Introduction to Network Security,3,Elective,Wed.C Fri.C,2
-4,Embedded System Software Design and Implementation,3,Elective,"Tue.C,D",2
-4,Database Systems,3,Elective,Tue.F Thur.F,2
-3,Computer Project (I) (Programming Related),2,Required,"Fri.12,13,14,15",2
-3,Computer Project (I) (Programming Related),2,Required,"Fri.12,13,14,15",2
-3,Computer Project (I) (Programming Related),2,Required,"Fri.12,13,14,15",2
-3,Computer Project (I) (Programming Related),2,Required,"Fri.12,13,14,15",2
-3,Computer Project (I) (Programming Related),2,Required,"Fri.12,13,14,15",2
+Year Standing,Course ID,Course Title,Credit,Credit type,Day/Period,semester
+1,4100008,Programming Languages (Programming Related),3,Required,"Mon.F,G",1
+1,4101002,Programming Languages (Programming Related),3,Required,Tue.F Thur.F,1
+1,4101002,Programming Languages (Programming Related),3,Required,Tue.F Thur.F,1
+1,4101012,Introduction to Information Science,2,Required,"Fri.4,5",1
+1,4101031,Program Design (I) (Programming Related),3,Required,Tue.E Thur.E,1
+1,4101031,Program Design (I) (Programming Related),3,Required,Tue.E Thur.E,1
+1,4101033,Quiz Section for Program Design (I) (Programming Related),1,Required,"Mon.13,14",1
+1,4101033,Quiz Section for Program Design (I) (Programming Related),1,Required,"Wed.13,14",1
+1,4101033,Quiz Section for Program Design (I) (Programming Related),1,Required,"Tue.13,14",1
+1,4101033,Quiz Section for Program Design (I) (Programming Related),1,Required,"Thur.13,14",1
+1,4101155,Linear Algebra,3,Required,Mon.F Wed.F,1
+1,4101155,Linear Algebra,3,Required,Mon.B Wed.B,1
+1,4102085,Discrete Mathematics,3,Required,Tue.B Thur.B,1
+1,2101001,Calculus (I),4,Required,"Mon.4,5 Wed.4,5 Thur.6",1
+1,4100003,Introduction to Computer Science (Programming Related),3,Elective,"Tue.G,H",2
+1,4101032,Program Design (II) (Programming Related),3,Required,Tue.C Thur.C,2
+1,4101032,Program Design (II) (Programming Related),3,Required,Tue.C Thur.C,2
+1,4101034,Quiz Section for Program Design(II) (Programming Related),1,Required,"Mon.13,14",2
+1,4101034,Quiz Section for Program Design(II) (Programming Related),1,Required,"Tue.13,14",2
+1,4101034,Quiz Section for Program Design(II) (Programming Related),1,Required,"Wed.13,14",2
+1,4101034,Quiz Section for Program Design(II) (Programming Related),1,Required,"Thur.13,14",2
+1,4102085,Discrete Mathematics,3,Required,Tue.E Thur.E,2
+1,4102085,Discrete Mathematics,3,Required,Tue.B Thur.B,2
+1,2101002,Calculus (II),4,Required,"Mon.4,5 Wed.4,5 Thur.6",2
+2,4102001,Electronic Circuits and Electronics,3,Required,"Fri.E,F",1
+2,4102001,Electronic Circuits and Electronics,3,Required,Tue.B Thur.B,1
+2,4102003,Electronic Circuits and Electronics Lab.,1,Required,"Mon.13,14",1
+2,4102003,Electronic Circuits and Electronics Lab.,1,Required,"Wed.13,14",1
+2,4102013,Probability Theory,3,Required,Tue.E Thur.E,1
+2,4102013,Probability Theory,3,Required,Mon.G Wed.G,1
+2,4102050,Assembly Language (Programming Related),3,Elective,Mon.C Wed.C,1
+2,4102062,Data Structure (Programming Related),3,Required,Tue.F Thur.F,1
+2,4102062,Data Structure (Programming Related),3,Required,"Tue.E,F",1
+2,4102068,Introduction to Algorithms,3,Required,Tue.G Thur.G,1
+2,4102090,Engineering Mathematics,3,Elective,"Wed.E,F",1
+2,4102068,Introduction to Algorithms (Programming Related),3,Required,Tue.G Thur.G,2
+2,4102068,Introduction to Algorithms (Programming Related),3,Required,Tue.G Thur.G,2
+2,4102100,Introduction to Digital Systems,3,Required,Mon.G Wed.G,2
+2,4102130,Digital Systems Lab.,1,Required,"Mon.13,14",2
+2,4102130,Digital Systems Lab.,1,Required,"Wed.13,14",2
+2,4102150,Systems Programming (Programming Related),3,Required,"Wed.E,F",2
+2,4102150,Systems Programming (Programming Related),3,Required,Tue.F Thur.F,2
+2,4102160,Object-Oriented Programming (Programming Related),3,Required,Tue.E Thur.E,2
+2,4102160,Object-Oriented Programming (Programming Related),3,Required,Tue.E Thur.E,2
+3,4103001,Introduction to Operating System,3,Required,Tue.G Thur.G,1
+3,4103001,Introduction to Operating System,3,Required,Tue.F Thur.F,1
+3,4103022,Software Engineering(Distant learning),3,Elective,"Wed.E,F",1
+3,4103026,Introduction to Multimedia Technology,3,Elective,Tue.E Thur.E,1
+3,4103028,Network Programming (Programming Related),3,Elective,Tue.C Thur.C,1
+3,4103055,Computer Organization,3,Required,Mon.C Wed.C,1
+3,4103055,Computer Organization,3,Required,Tue.B Thur.B,1
+3,4103800,Computer Science Seminars,1,Required,"Mon.8,9",1
+3,4103901,Engineering Ethics,2,Elective,"Mon.8,9",1
+3,4103039,Introduction to Computer Networks,3,Elective,Tue.B Thur.B,2
+3,4103061,Numerical Analysis,3,Elective,Tue.C Thur.C,2
+3,4103095,Java Programming: Enterprise and Embedded Systems (Programming Related),3,Elective,Mon.B Wed.B,2
+3,4103901,Engineering Ethics,2,Elective,"Mon.8,9",2
+3,4104005,Compiler Design (Programming Related),3,Required,Mon.C Wed.C,2
+3,4104005,Compiler Design (Programming Related),3,Required,Mon.C Wed.C,2
+3,4104800,Computer Project (I) (Programming Related),2,Required,"Fri.12,13,14,15",2
+3,4104800,Computer Project (I) (Programming Related),2,Required,"Fri.12,13,14,15",2
+3,4104800,Computer Project (I) (Programming Related),2,Required,"Fri.12,13,14,15",2
+3,4104800,Computer Project (I) (Programming Related),2,Required,"Fri.12,13,14,15",2
+3,4104800,Computer Project (I) (Programming Related),2,Required,"Fri.12,13,14,15",2
+4,4104046,Introduction to Telecommunication Network,3,Elective,Wed.C Fri.C,1
+4,4104801,Computer Project (II),2,Required,"Fri.12,13,14,15",1
+4,4104801,Computer Project (II),2,Required,"Fri.12,13,14,15",1
+4,4104801,Computer Project (II),2,Required,"Fri.12,13,14,15",1
+4,4104801,Computer Project (II),2,Required,"Fri.12,13,14,15",1
+4,4104801,Computer Project (II),2,Required,"Fri.12,13,14,15",1
+4,4104011,Introductoin To Image Processing,3,Elective,Mon.G Wed.G,2
+4,4104048,Introduction to Network Security,3,Elective,Wed.C Fri.C,2
+4,4104052,Embedded System Software Design and Implementation,3,Elective,"Tue.C,D",2
+4,4104061,Database Systems,3,Elective,Tue.F Thur.F,2
