@@ -14,3 +14,4 @@
 6. 經濟系的經濟學原理(一)、(二) (Principle of Economics(I)、Principle of Economics(II)) 手動加入兩者並手動刪除 Principle of Economics(II)
 7. 同樣是系統分析，會資系 : System Analysis and Design，資管系 : System Analysis & Design，傻眼= =
 8. mis_accounting_overlap 缺企業資源規劃，但是因為先不計選修，所以暫不列入計算
+9. 完成粗略的衝堂計算(同課程分開算，未來會將同樣的課程整合在一起，計算精緻的衝堂堂數)，粗略的衝堂計算未來可以應用在"量化選課自由度"上
