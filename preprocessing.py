@@ -199,6 +199,17 @@ def read_file() :
 
 	return dpt_df_lst
 
+def read_time_conflict_file() : 
+	path = os.getcwd()
+	financial = pd.read_csv(path + "/data/Finance and Banking time conflict.csv" , encoding = "big5")
+	mis = pd.read_csv(path + "/data/Information Management time conflict.csv" , encoding = "big5")
+	ie = pd.read_csv(path + "/data/Information Engineering time conflict.csv" , encoding = "big5")
+	accounting = pd.read_csv(path + "/data/Accounting and Information Technology time conflict.csv" , encoding = "big5")
+
+	dpt_df_lst = [financial , mis , ie , accounting]
+
+	return dpt_df_lst
+
 #計算資管系與其他系所的課程重疊率
 def course_overlap() : 
 	#dpt_name = ["financial" , "mis" , "ie" , "accounting"]
@@ -318,6 +329,7 @@ def rough_time_conflict() :
 	#i : 科系的資料表
 	#j : 年級
 	#k : 學期
+	#還沒計算選課自由度
 	for i in range(len(dpt_df_lst)) : 
 		dpt_df_lst[i]['is_conflict'] = 0
 	mis_df['is_conflict'] = 0
@@ -357,8 +369,7 @@ def rough_time_conflict() :
 		print(i)
 	
 	dpt_df_lst.insert(1 , mis_df)
-	return dpt_df_lst
-	
+	output.write_time_conflict_csv(dpt_df_lst)
 						
 			
 				
@@ -397,7 +408,8 @@ def compare_time(mis_time_lst , other_time_lst) :
 				else : 
 					compare_result.append(0)
 
-			else : compare_result.append(0)
+			else : 
+				compare_result.append(0)
 
 	return_result = [0] * len(other_time_lst)
 	for i in range(len(other_time_lst)) : 
@@ -411,3 +423,26 @@ def compare_time(mis_time_lst , other_time_lst) :
 
 	return return_result
 			
+def delicate_time_conflict() : 
+	dpt_df_lst = read_time_conflict_file()
+	mis_df = dpt_df_lst.pop(1)
+	conflict_number_lst = [0] * 3
+	all_course_number_lst = []
+
+	for i in range(len(dpt_df_lst)) : 
+		course_title_lst = dpt_df_lst[i]["Course Title"].drop_duplicates().to_list()
+		all_course_number_lst.append(len(course_title_lst))
+		for j in course_title_lst : 
+			if sum(dpt_df_lst[i].loc[dpt_df_lst[i]["Course Title"] == j , "is_conflict"].to_list()) != len(dpt_df_lst[i].loc[dpt_df_lst[i]["Course Title"] == j , "is_conflict"].to_list()) : 
+				print(dpt_df_lst[i].loc[dpt_df_lst[i]["Course Title"] == j , "is_conflict"].to_list())
+				conflict_number_lst[i] += 1
+	
+	mis_financial_time_conflict_ratio = conflict_number_lst[0] / all_course_number_lst[0]
+	mis_ie_time_conflict_ratio = conflict_number_lst[1] / all_course_number_lst[1]
+	mis_accounting_time_conflict_ratio = conflict_number_lst[2] / all_course_number_lst[2]
+
+	print(mis_financial_time_conflict_ratio)
+	print(mis_ie_time_conflict_ratio)
+	print(mis_accounting_time_conflict_ratio)
+
+

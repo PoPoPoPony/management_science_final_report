@@ -1,0 +1,40 @@
+Year Standing,Course ID,Course Title,Credit,Credit type,Day/Period,semester,period1,period2,is_conflict
+1,5151007,introductiontocomputer,3,Required,"Wed.7,8,9",1,"Wed/7,8,9",,1.0
+1,5151032,accounting(i),3,Required,"Tue.4,5,6 Thur.4",1,"Tue/4,5,6",Thur/4,1.0
+1,5201001,introductiontobusiness,3,Required,"Fri.4,5,6",1,"Fri/4,5,6",,1.0
+1,5101001,principleofeconomics(i),3,Required,"Mon.4,5 Wed.4,5",1,"Mon/4,5","Wed/4,5",1.0
+1,5151008,anintroductiontocivillaw,2,Required,"Thur.10,11",2,"Thur/10,11",,1.0
+1,5151033,accounting(ii),3,Required,"Tue.7,8,9 Thur.7",2,"Tue/7,8,9",Thur/7,0.0
+1,2101018,calculus,3,Required,Tue.C Wed.6 Thur.C,2,Tue/4.5,Wed/6,1.0
+1,5101002,principleofeconomics(ii),3,Required,"Mon.4,5 Wed.4,5",2,"Mon/4,5","Wed/4,5",1.0
+2,5152020,statistics(i),3,Required,"Tue.7 Thur.7,8,9",1,Tue/7,"Thur/7,8,9",1.0
+2,5152020,statistics(i),3,Required,"Wed.7,8,9 Fri.7",1,"Wed/7,8,9",Fri/7,1.0
+2,5152020,statistics(i),3,Required,"Tue.6 Thur.4,5,6",1,Tue/6,"Thur/4,5,6",1.0
+2,5152092,commerciallaw,2,Required,"Thur.10,11",1,"Thur/10,11",,0.0
+2,5152100,financialmanagement(i),3,Required,"Wed.4,5,6",1,"Wed/4,5,6",,0.0
+2,5152100,financialmanagement(i),3,Required,"Wed.4,5,6",1,"Wed/4,5,6",,0.0
+2,5152100,financialmanagement(i),3,Required,"Fri.4,5,6",1,"Fri/4,5,6",,0.0
+2,5152100,financialmanagement(i),3,Required,"Thur.7,8,9",1,"Thur/7,8,9",,1.0
+2,5102103,microeconomics,3,Required,"Mon.7,8,9",1,"Mon/7,8,9",,1.0
+2,5152011,macroeconomics,3,Required,"Tue.4,5,6",2,"Tue/4,5,6",,1.0
+2,5152021,statistics(ii),3,Required,"Tue.7 Thur.7,8,9",2,Tue/7,"Thur/7,8,9",1.0
+2,5152021,statistics(ii),3,Required,"Wed.7,8,9 Fri.7",2,"Wed/7,8,9",Fri/7,1.0
+2,5152021,statistics(ii),3,Required,"Tue.6 Thur.4,5,6",2,Tue/6,"Thur/4,5,6",1.0
+2,5152022,statistics,3,Required,"Fri.3,4,5",2,"Fri/3,4,5",,0.0
+2,5152101,financialmanagement(ii),3,Required,"Wed.4,5,6",2,"Wed/4,5,6",,0.0
+2,5152101,financialmanagement(ii),3,Required,"Wed.4,5,6",2,"Wed/4,5,6",,0.0
+2,5152101,financialmanagement(ii),3,Required,"Fri.4,5,6",2,"Fri/4,5,6",,0.0
+2,5152200,investments,3,Required,"Thur.4,5,6",2,"Thur/4,5,6",,1.0
+2,5152200,investments,3,Required,"Wed.7,8,9",2,"Wed/7,8,9",,1.0
+2,5152200,investments,3,Required,"Thur.4,5,6",2,"Thur/4,5,6",,1.0
+3,5153001,businesssoftwareapplicationanddesign,3,Required,"Fri.4,5,6",1,"Fri/4,5,6",,0.0
+3,5153173,ethicsinfinance,3,Required,"Tue.7,8,9",1,"Tue/7,8,9",,0.0
+3,5153173,ethicsinfinance,3,Required,"Tue.7,8,9",1,"Tue/7,8,9",,0.0
+3,5153300,financialmarketsandinstitutions,3,Required,"Wed.10,11,12",1,"Wed/10,11,12",,0.0
+3,5153300,financialmarketsandinstitutions,3,Required,"Thur.7,8,9",1,"Thur/7,8,9",,0.0
+3,5153340,futuresandoptions,3,Required,"Tue.4,5,6",1,"Tue/4,5,6",,1.0
+3,5153340,futuresandoptions,3,Required,"Tue.4,5,6",1,"Tue/4,5,6",,1.0
+3,5154180,internationalfinancialmanagement,3,Required,"Wed.7,8,9",2,"Wed/7,8,9",,0.0
+3,5154180,internationalfinancialmanagement,3,Required,"Tue.4,5,6",2,"Tue/4,5,6",,0.0
+4,5154172,casestudyincorporatefinance,3,Required,"Tue.4,5,6",1,"Tue/4,5,6",,0.0
+4,5154172,casestudyincorporatefinance,3,Required,"Wed.4,5,6",1,"Wed/4,5,6",,0.0

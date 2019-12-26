@@ -1,0 +1,33 @@
+Course ID,Course Title,Credit,Credit type,Day/Period,Year Standing,semester,period1,period2,is_conflict
+5301105,introductiontocomputer,3,Required,Mon.C Wed.C,1,1,Mon/4.5,Wed/4.5,0
+5301105,introductiontocomputer,3,Required,"Fri.4,5,6",1,1,"Fri/4,5,6",,0
+5301105,introductiontocomputer,3,Required,"Fri.7,8,9",1,1,"Fri/7,8,9",,0
+5301105,introductiontocomputer,3,Required,"Fri.4,5,6",1,1,"Fri/4,5,6",,0
+5301105,introductiontocomputer,3,Required,"Fri.7,8,9",1,1,"Fri/7,8,9",,0
+5301105,introductiontocomputer,3,Required,"Tue.7,8,9",1,1,"Tue/7,8,9",,0
+5301214,object-orientedtechnology(i)-java,3,Required,"Tue.4 Thur.4,5,6",1,1,Tue/4,"Thur/4,5,6",0
+5201001,introductiontobusiness,3,Required,"Wed.7,8,9",1,1,"Wed/7,8,9",,0
+5101001,principleofeconomics(i),3,Required,"Tue.8,9 Thur.8,9",1,1,"Tue/8,9","Thur/8,9",0
+5261104,accounting(i),3,Required,"Tue.10,11,12 Thur.10",1,1,"Tue/10,11,12",Thur/10,0
+5301216,programdesign,3,Required,"Tue.10,11 Thur.10,11",1,2,"Tue/10,11","Thur/10,11",0
+5301217,introductiontoinformationmanagement,3,Required,Tue.C Thur.C,1,2,Tue/4.5,Thur/4.5,0
+2101010,calculus,4,Required,"Mon.4,5 Wed.4,5 Thur.6",1,2,"Mon/4,5","Wed/4,5",0
+5302203,datastructure,3,Required,"Tue.8,9 Thur.8,9",2,1,"Tue/8,9","Thur/8,9",0
+5302218,lawinscienceandtechnology,3,Required,Mon.E Fri.E,2,1,Mon/7.5,Fri/7.5,0
+5152020,statistics(i),3,Required,"Tue.7 Thur.7,8,9",2,1,Tue/7,"Thur/7,8,9",0
+5152020,statistics(i),3,Required,"Wed.7,8,9 Fri.7",2,1,"Wed/7,8,9",Fri/7,0
+5152020,statistics(i),3,Required,"Tue.6 Thur.4,5,6",2,1,Tue/6,"Thur/4,5,6",0
+5302202,databasemanagement,3,Required,"Tue.8,9 Thur.8,9",2,2,"Tue/8,9","Thur/8,9",0
+5302205,businessdatacommunication,3,Required,Mon.H Wed.H,2,2,Mon/11.5,Wed/11.5,0
+5152021,statistics(ii),3,Required,"Tue.7 Thur.7,8,9",2,2,Tue/7,"Thur/7,8,9",0
+5152021,statistics(ii),3,Required,"Wed.7,8,9 Fri.7",2,2,"Wed/7,8,9",Fri/7,0
+5152021,statistics(ii),3,Required,"Tue.6 Thur.4,5,6",2,2,Tue/6,"Thur/4,5,6",0
+5302219,businesssoftwareapplicationsanddesign,3,Required,"Mon.4,5,6",3,1,"Mon/4,5,6",,0
+5303102,systemanalysisanddesign,3,Required,Tue.G Thur.G,3,1,Tue/10.5,Thur/10.5,0
+5303227,electroniccommerce,3,Required,Tue.C Thur.C,3,1,Tue/4.5,Thur/4.5,0
+5303229,projectdevelopmenti,2,Required,Mon.1 Wed.1,3,1,Mon/1,Wed/1,0
+5303233,projectdevelopment(ii),2,Required,Tue.1 Thur.1,3,1,Tue/1,Thur/1,0
+5303229,projectdevelopmenti,2,Required,Mon.1 Wed.1,3,2,Mon/1,Wed/1,0
+5303233,projectdevelopment(ii),2,Required,Tue.1 Thur.1,3,2,Tue/1,Thur/1,0
+5203084,businessethics,2,Required,"Mon.4,5",3,2,"Mon/4,5",,0
+5304219,strategicinformationmanagement,3,Required,Mon.G Wed.G,4,1,Mon/10.5,Wed/10.5,0

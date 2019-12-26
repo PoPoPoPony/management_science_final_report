@@ -1,0 +1,59 @@
+Year Standing,Course ID,Course Title,Credit,Credit type,Day/Period,semester,period1,period2,is_conflict
+1,4100008,programminglanguages,3,Required,"Mon.F,G",1,"Mon/8.5,10.5",,0.0
+1,4101002,programminglanguages,3,Required,Tue.F Thur.F,1,Tue/8.5,Thur/8.5,1.0
+1,4101002,programminglanguages,3,Required,Tue.F Thur.F,1,Tue/8.5,Thur/8.5,1.0
+1,4101012,introductiontoinformationscience,2,Required,"Fri.4,5",1,"Fri/4,5",,1.0
+1,4101031,programdesign(i),3,Required,Tue.E Thur.E,1,Tue/7.5,Thur/7.5,1.0
+1,4101031,programdesign(i),3,Required,Tue.E Thur.E,1,Tue/7.5,Thur/7.5,1.0
+1,4101033,quizsectionforprogramdesign(i),1,Required,"Mon.13,14",1,"Mon/13,14",,0.0
+1,4101033,quizsectionforprogramdesign(i),1,Required,"Wed.13,14",1,"Wed/13,14",,1.0
+1,4101033,quizsectionforprogramdesign(i),1,Required,"Tue.13,14",1,"Tue/13,14",,1.0
+1,4101033,quizsectionforprogramdesign(i),1,Required,"Thur.13,14",1,"Thur/13,14",,0.0
+1,4101155,linearalgebra,3,Required,Mon.F Wed.F,1,Mon/8.5,Wed/8.5,1.0
+1,4101155,linearalgebra,3,Required,Mon.B Wed.B,1,Mon/2.5,Wed/2.5,1.0
+1,4102085,discretemathematics,3,Required,Tue.B Thur.B,1,Tue/2.5,Thur/2.5,0.0
+1,2101001,calculus(i),4,Required,"Mon.4,5 Wed.4,5 Thur.6",1,"Mon/4,5","Wed/4,5",1.0
+1,4101032,programdesign(ii),3,Required,Tue.C Thur.C,2,Tue/4.5,Thur/4.5,1.0
+1,4101032,programdesign(ii),3,Required,Tue.C Thur.C,2,Tue/4.5,Thur/4.5,1.0
+1,4101034,quizsectionforprogramdesign(ii),1,Required,"Mon.13,14",2,"Mon/13,14",,0.0
+1,4101034,quizsectionforprogramdesign(ii),1,Required,"Tue.13,14",2,"Tue/13,14",,0.0
+1,4101034,quizsectionforprogramdesign(ii),1,Required,"Wed.13,14",2,"Wed/13,14",,0.0
+1,4101034,quizsectionforprogramdesign(ii),1,Required,"Thur.13,14",2,"Thur/13,14",,0.0
+1,4102085,discretemathematics,3,Required,Tue.E Thur.E,2,Tue/7.5,Thur/7.5,0.0
+1,4102085,discretemathematics,3,Required,Tue.B Thur.B,2,Tue/2.5,Thur/2.5,0.0
+1,2101002,calculus(ii),4,Required,"Mon.4,5 Wed.4,5 Thur.6",2,"Mon/4,5","Wed/4,5",1.0
+2,4102001,electroniccircuitsandelectronics,3,Required,"Fri.E,F",1,"Fri/7.5,8.5",,1.0
+2,4102001,electroniccircuitsandelectronics,3,Required,Tue.B Thur.B,1,Tue/2.5,Thur/2.5,0.0
+2,4102003,electroniccircuitsandelectronicslab,1,Required,"Mon.13,14",1,"Mon/13,14",,0.0
+2,4102003,electroniccircuitsandelectronicslab,1,Required,"Wed.13,14",1,"Wed/13,14",,0.0
+2,4102013,probabilitytheory,3,Required,Tue.E Thur.E,1,Tue/7.5,Thur/7.5,1.0
+2,4102013,probabilitytheory,3,Required,Mon.G Wed.G,1,Mon/10.5,Wed/10.5,0.0
+2,4102062,datastructure,3,Required,Tue.F Thur.F,1,Tue/8.5,Thur/8.5,1.0
+2,4102062,datastructure,3,Required,"Tue.E,F",1,"Tue/7.5,8.5",,1.0
+2,4102068,introductiontoalgorithms,3,Required,Tue.G Thur.G,1,Tue/10.5,Thur/10.5,0.0
+2,4102068,introductiontoalgorithms,3,Required,Tue.G Thur.G,2,Tue/10.5,Thur/10.5,0.0
+2,4102068,introductiontoalgorithms,3,Required,Tue.G Thur.G,2,Tue/10.5,Thur/10.5,0.0
+2,4102100,introductiontodigitalsystems,3,Required,Mon.G Wed.G,2,Mon/10.5,Wed/10.5,0.0
+2,4102130,digitalsystemslab,1,Required,"Mon.13,14",2,"Mon/13,14",,0.0
+2,4102130,digitalsystemslab,1,Required,"Wed.13,14",2,"Wed/13,14",,0.0
+2,4102150,systemsprogramming,3,Required,"Wed.E,F",2,"Wed/7.5,8.5",,1.0
+2,4102150,systemsprogramming,3,Required,Tue.F Thur.F,2,Tue/8.5,Thur/8.5,1.0
+2,4102160,object-orientedprogramming,3,Required,Tue.E Thur.E,2,Tue/7.5,Thur/7.5,1.0
+2,4102160,object-orientedprogramming,3,Required,Tue.E Thur.E,2,Tue/7.5,Thur/7.5,1.0
+3,4103001,introductiontooperatingsystem,3,Required,Tue.G Thur.G,1,Tue/10.5,Thur/10.5,1.0
+3,4103001,introductiontooperatingsystem,3,Required,Tue.F Thur.F,1,Tue/8.5,Thur/8.5,1.0
+3,4103055,computerorganization,3,Required,Mon.C Wed.C,1,Mon/4.5,Wed/4.5,1.0
+3,4103055,computerorganization,3,Required,Tue.B Thur.B,1,Tue/2.5,Thur/2.5,0.0
+3,4103800,computerscienceseminars,1,Required,"Mon.8,9",1,"Mon/8,9",,0.0
+3,4104005,compilerdesign,3,Required,Mon.C Wed.C,2,Mon/4.5,Wed/4.5,1.0
+3,4104005,compilerdesign,3,Required,Mon.C Wed.C,2,Mon/4.5,Wed/4.5,1.0
+3,4104800,computerproject(i),2,Required,"Fri.12,13,14,15",2,"Fri/12,13,14,15",,0.0
+3,4104800,computerproject(i),2,Required,"Fri.12,13,14,15",2,"Fri/12,13,14,15",,0.0
+3,4104800,computerproject(i),2,Required,"Fri.12,13,14,15",2,"Fri/12,13,14,15",,0.0
+3,4104800,computerproject(i),2,Required,"Fri.12,13,14,15",2,"Fri/12,13,14,15",,0.0
+3,4104800,computerproject(i),2,Required,"Fri.12,13,14,15",2,"Fri/12,13,14,15",,0.0
+4,4104801,computerproject(ii),2,Required,"Fri.12,13,14,15",1,"Fri/12,13,14,15",,0.0
+4,4104801,computerproject(ii),2,Required,"Fri.12,13,14,15",1,"Fri/12,13,14,15",,0.0
+4,4104801,computerproject(ii),2,Required,"Fri.12,13,14,15",1,"Fri/12,13,14,15",,0.0
+4,4104801,computerproject(ii),2,Required,"Fri.12,13,14,15",1,"Fri/12,13,14,15",,0.0
+4,4104801,computerproject(ii),2,Required,"Fri.12,13,14,15",1,"Fri/12,13,14,15",,0.0

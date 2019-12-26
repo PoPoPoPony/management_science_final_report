@@ -1,0 +1,35 @@
+Course ID,Course Title,Credit,Credit type,Day/Period,Year Standing,semester,period1,period2,is_conflict
+5261101,accounting(i),3,Required,"Wed.7,8,9 Fri.7",1,1,"Wed/7,8,9",Fri/7,1
+5261104,accounting(i),3,Required,"Tue.10,11 Thur.10,11",1,1,"Tue/10,11","Thur/10,11",1
+5261104,accounting(i),3,Required,"Mon.7,8,9 Fri.7",1,1,"Mon/7,8,9",Fri/7,1
+5261104,accounting(i),3,Required,"Tue.7,8 Thur.7,8",1,1,"Tue/7,8","Thur/7,8",1
+5261104,accounting(i),3,Required,"Tue.7,8,9 Thur.7",1,1,"Tue/7,8,9",Thur/7,1
+5261104,accounting(i),3,Required,"Tue.10,11,12 Thur.10",1,1,"Tue/10,11,12",Thur/10,1
+2101003,calculus(i),3,Required,Mon.C Wed.C Thur.6,1,1,Mon/4.5,Wed/4.5,1
+2101003,calculus(i),3,Required,Mon.C Wed.C Thur.6,1,1,Mon/4.5,Wed/4.5,1
+5101001,principleofeconomics(i),3,Required,"Tue.4,5 Thur.4,5",1,1,"Tue/4,5","Thur/4,5",1
+5301105,introductiontocomputer,3,Required,"Tue.7,8,9",1,1,"Tue/7,8,9",,1
+5261102,accounting(ii),3,Required,"Wed.7,8,9 Fri.7",1,2,"Wed/7,8,9",Fri/7,0
+5261105,accounting(ii),3,Required,"Tue.10,11 Thur.10,11",1,2,"Tue/10,11","Thur/10,11",1
+5261105,accounting(ii),3,Required,"Mon.7,8,9 Fri.7",1,2,"Mon/7,8,9",Fri/7,0
+5261105,accounting(ii),3,Required,"Tue.7,8,9 Thur.7",1,2,"Tue/7,8,9",Thur/7,0
+5261610,civillaw,3,Required,"Mon.12,13,14",1,2,"Mon/12,13,14",,0
+5262100,intermediateaccounting(i),4,Required,"Tue.7,8,9 Thur.7,8,9",2,1,"Tue/7,8,9","Thur/7,8,9",1
+5262108,commerciallaw,3,Required,"Mon.12,13,14",2,1,"Mon/12,13,14",,0
+5262601,databasemanagement,3,Required,"Wed.7,8,9",2,1,"Wed/7,8,9",,1
+5263504,taxlaw,3,Required,"Wed.3,4,5",2,1,"Wed/3,4,5",,0
+5262101,intermediateaccounting(ii),4,Required,"Tue.7,8,9 Thur.7,8,9",2,2,"Tue/7,8,9","Thur/7,8,9",1
+5262106,costandmanagementaccounting(i),3,Required,"Mon.5 Fri.4,5,6",2,2,Mon/5,"Fri/4,5,6",0
+5262300,systemanalysisanddesign,3,Required,"Mon.7,8,9",2,2,"Mon/7,8,9",,0
+5152022,statistics(i),3,Required,"Fri.3,4,5",2,2,"Fri/3,4,5",,0
+5263001,intermediateaccounting(iii),4,Required,"Tue.4,5,6 Thur.4,5,6",3,1,"Tue/4,5,6","Thur/4,5,6",1
+5263102,advancedaccounting(i),3,Required,"Mon.10,11,12 Wed.10",3,1,"Mon/10,11,12",Wed/10,1
+5263106,costandmanagementaccounting(ii),3,Required,"Mon.5 Fri.4,5,6",3,1,Mon/5,"Fri/4,5,6",1
+5263605,enterpriseresourceplanning,3,Required,"Fri.7,8,9",3,1,"Fri/7,8,9",,0
+5263108,advancedaccounting(ii),3,Required,"Mon.10,11,12 Wed.10",3,2,"Mon/10,11,12",Wed/10,0
+5263109,auditing(i),3,Required,"Fri.10,11,12,13",3,2,"Fri/10,11,12,13",,0
+5264001,auditing(ii),3,Required,"Fri.10,11,12,13",4,1,"Fri/10,11,12,13",,0
+5264002,financialstatementanalysis,3,Required,"Fri.7,8,9",4,1,"Fri/7,8,9",,0
+5264019,computerauditing,3,Required,"Wed.4,5,6",4,1,"Wed/4,5,6",,0
+5204089,seminaronhumanisticandbusinessethics,2,Required,"Mon.7,8",4,1,"Mon/7,8",,0
+5264004,accountinginformationsystems,3,Required,"Mon.7,8 Wed.7",4,2,"Mon/7,8",Wed/7,0

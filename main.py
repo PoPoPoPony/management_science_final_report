@@ -11,4 +11,4 @@ import output
 #preprocessing.course_overlap()
 
 
-preprocessing.rough_time_conflict()
+preprocessing.delicate_time_conflict()
