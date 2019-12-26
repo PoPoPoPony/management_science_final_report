@@ -268,7 +268,7 @@ def course_title_procedure(dpt_df_lst) :
 
 
 
-def time_conflict() : 
+def rough_time_conflict() : 
 	#財金，資管，資工，會資
 	dpt_df_lst = course_title_procedure(drop_elective())
 	time_str_lst = []
@@ -320,6 +320,7 @@ def time_conflict() :
 	#k : 學期
 	for i in range(len(dpt_df_lst)) : 
 		dpt_df_lst[i]['is_conflict'] = 0
+	mis_df['is_conflict'] = 0
 
 	for i in dpt_df_lst : 
 		for j in range(1 , 5) : 
@@ -354,6 +355,10 @@ def time_conflict() :
 
 	for i in dpt_df_lst : 
 		print(i)
+	
+	dpt_df_lst.insert(1 , mis_df)
+	return dpt_df_lst
+	
 						
 			
 				
