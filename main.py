@@ -18,5 +18,5 @@ import web_clawer
 options = web_clawer.driver_settings()
 driver , home = web_clawer.CCU_login(options)
 driver , dpt_page_url = web_clawer.CCU_get_dpt_page(driver , home)
-web_clawer.CCU_get_mis_df(driver , dpt_page_url)
+web_clawer.CCU_get_df(driver , dpt_page_url)
 

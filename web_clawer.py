@@ -5,6 +5,8 @@ from time import sleep
 import pandas as pd
 import os
 import preprocessing
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 
 #設定driver屬性
 def driver_settings() : 
@@ -45,36 +47,75 @@ def CCU_get_dpt_page(driver , home_page_url) :
 
 #從所有系所的頁面進入資管系的頁面，並爬取所有年級的開課檔案
 #pd.read_html 好像抓不到= =
-def CCU_get_mis_df(driver , dpt_page_url) : 
+def CCU_get_df(driver , dpt_page_url) : 
+	financial_df_lst = []
 	mis_df_lst = []
-	
-	driver.get(dpt_page_url)
-	mis_btn = driver.find_element_by_xpath("//*[@id='form1']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[5]/font/input[11]")
-	mis_btn.click()
-	search_class_btn = driver.find_element_by_xpath("//*[@id='form1']/input[6]")
-	search_class_btn.click()
-	
-	mis_df_lst.append(process_tables(driver.page_source))
+	ie_df_lst = []
+	accounting_df_lst = []
 
-	page_lst = CCU_get_other_grades_page_source(driver)
-	for i in range(len(page_lst)) : 
-		mis_df_lst.append(process_tables(page_lst[i]))
+	dpt_df_lst = [financial_df_lst , mis_df_lst , ie_df_lst , accounting_df_lst]
 
-	df = preprocessing.concat_inlist_df(mis_df_lst)
-	print(df)
+	dpt_btn_lst = ["//*[@id='form1']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[5]/font/input[5]" , 
+	"//*[@id='form1']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[5]/font/input[11]" , 
+	"//*[@id='form1']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[4]/font/input[3]" , 
+	"//*[@id='form1']/table/tbody/tr[2]/td/table/tbody/tr[2]/td[5]/font/input[9]"]
 
+	for i in range(len(dpt_df_lst)) : 
+		flag = 0
+		driver.get(dpt_page_url)
+		dpt_btn = driver.find_element_by_xpath(dpt_btn_lst[i])
+		dpt_btn.click()
+		search_class_btn = driver.find_element_by_xpath("//*[@id='form1']/input[6]")
+		search_class_btn.click()
+		
+		dpt_df_lst[i].append(process_tables(driver.page_source))
+		
+		try : 
+			next_page_btn = driver.find_element_by_link_text("第 2 頁")
+			next_page_btn.click()
+			flag = 1
+		except Exception as e : 
+			print(e)
+		print(flag)
+		if flag == 1 : 	
+			dpt_df_lst[i].append(process_tables(driver.page_source))
 
-	
+		page_lst = CCU_get_other_grades_page_source(driver)
+		for j in range(len(page_lst)) : 
+			dpt_df_lst[i].append(process_tables(page_lst[j]))
+			
+		dpt_df_lst[i] = preprocessing.concat_inlist_df(dpt_df_lst[i])
+
+	for i in dpt_df_lst : 
+		print(i)
+
+	driver.quit()
+
+	return dpt_df_lst
+
 #爬取2 ~ 4年級的page_source
 def CCU_get_other_grades_page_source(driver) : 
 	page_lst = []
+	grade_lst = ["二年級" , "三年級" , "四年級"]
 
-	for i in range(2 , 5) :
-		#等等確認其他系是不是也是這個模式 
-		grade_btn = driver.find_element_by_xpath("/html/body/center/form/table/tbody/tr[3]/th[1]/form/a[" + str(i) + "]")
-		grade_btn.click()
+	for i in range(len(grade_lst)) : 
+		flag = 0
+		next_grade_btn = driver.find_element_by_link_text(grade_lst[i])
+		next_grade_btn.click()
 		page_lst.append(driver.page_source)
-	
+
+		try : 
+			next_page_btn = driver.find_element_by_link_text("第 2 頁")
+			print(1)
+			next_page_btn.click()
+			flag = 1
+		except Exception as e : 
+			print(e)
+			continue
+		
+		if flag == 1 : 
+			page_lst.append(driver.page_source)
+
 	return page_lst
 
 
@@ -124,11 +165,14 @@ def process_tables(page) :
 			temp = []
 		
 	df = pd.DataFrame(pre_df_lst[1:] , columns = pre_df_lst[0])
-		
 	return df
 
+	'''
+	
+	if driver.find_element_by_link_text("第2頁").is_enabled() : 
+		next_page_btn = 
 
-
+	'''
 
 
 
