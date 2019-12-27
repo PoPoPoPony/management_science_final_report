@@ -43,7 +43,7 @@ def get_table(source_lst , semester) :
 	return df_lst
 
 
-def concat(df_lst1 , df_lst2) : 
+def concat_df_lst(df_lst1 , df_lst2) : 
 	df_lst = []
 	for i in range(len(df_lst1)) : 
 		df = pd.concat([df_lst1[i] , df_lst2[i]] , axis = 0)
@@ -102,7 +102,7 @@ def hard_insert() :
 		df['semester'] = 2
 		df_lst_2.append(df)
 
-	df_lst = concat(df_lst_1 , df_lst_2)
+	df_lst = concat_df_lst(df_lst_1 , df_lst_2)
 
 	math_df = df_lst[0]
 	manage_df = df_lst[1]
