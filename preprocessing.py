@@ -320,8 +320,8 @@ def rough_time_conflict() :
 		
 		dpt_df_lst[i]['period1'] = first_period_lst
 		dpt_df_lst[i]['period2'] = second_period_lst
-		first_period_lst.clear()
-		second_period_lst.clear()
+		first_period_lst = []
+		second_period_lst = []
 
 	mis_df = dpt_df_lst.pop(1)
 	pre_conflict_lst = []
@@ -363,7 +363,7 @@ def rough_time_conflict() :
 						pre_conflict_lst.append(1)
 				
 				i.loc[(i["Year Standing"] == j) & (i["semester"] == k) , "is_conflict"] = pre_conflict_lst
-				pre_conflict_lst.clear()
+				pre_conflict_lst = []
 
 	for i in dpt_df_lst : 
 		print(i)
