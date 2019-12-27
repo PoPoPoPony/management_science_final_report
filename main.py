@@ -11,4 +11,5 @@ import output
 #preprocessing.course_overlap()
 
 
-preprocessing.delicate_time_conflict()
+#preprocessing.delicate_time_conflict()
+preprocessing.free_score()

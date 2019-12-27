@@ -445,4 +445,36 @@ def delicate_time_conflict() :
 	print(mis_ie_time_conflict_ratio)
 	print(mis_accounting_time_conflict_ratio)
 
+	return mis_financial_time_conflict_ratio , mis_ie_time_conflict_ratio , mis_accounting_time_conflict_ratio
+
+
+	
+def free_score() : 
+	dpt_df_lst = read_time_conflict_file()
+	
+	mis_df = dpt_df_lst.pop(1)
+	free_score_lst = []
+	all_course_lst = []
+
+	for i in range(len(dpt_df_lst)) : 
+		course_title_lst = dpt_df_lst[i]["Course Title"].drop_duplicates().to_list()
+		all_course_lst.append(len(course_title_lst))
+		temp = []
+		for j in course_title_lst : 
+			score = sum(dpt_df_lst[i].loc[dpt_df_lst[i]["Course Title"] == j , "is_conflict"].to_list()) / len(dpt_df_lst[i].loc[dpt_df_lst[i]["Course Title"] == j , "is_conflict"].to_list())
+			score = 1 - score
+			temp.append(score)
+		free_score_lst.append(temp)
+
+
+	mis_financial_free_score = sum(free_score_lst[0])
+	mis_ie_free_score = sum(free_score_lst[1])
+	mis_accounting_free_score = sum(free_score_lst[2])
+
+	print(mis_financial_free_score)
+	print(mis_ie_free_score)
+	print(mis_accounting_free_score)
+
+	return mis_financial_free_score , mis_ie_free_score , mis_accounting_free_score
+
 
