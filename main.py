@@ -15,8 +15,8 @@ import web_clawer
 #preprocessing.delicate_time_conflict()
 #preprocessing.free_score()
 
-#options = web_clawer.driver_settings()
-#driver , home = web_clawer.CCU_login(options)
-#driver , dpt_page_url = web_clawer.CCU_get_dpt_page(driver , home)
-web_clawer.CCU_get_mis_pages()
-#driver , dpt_page_url
+options = web_clawer.driver_settings()
+driver , home = web_clawer.CCU_login(options)
+driver , dpt_page_url = web_clawer.CCU_get_dpt_page(driver , home)
+web_clawer.CCU_get_mis_df(driver , dpt_page_url)
+

@@ -52,6 +52,13 @@ def concat_df_lst(df_lst1 , df_lst2) :
 
 	return df_lst
 
+def concat_inlist_df(df_lst) : 
+	df = pd.concat([df_lst[0] , df_lst[1]] , axis = 0 , ignore_index = True)
+	for i in range(2 , len(df_lst)) : 
+		df = pd.concat([df , df_lst[i]] , axis = 0 , ignore_index = True)
+	
+	return df
+
 #將由其他系支援的課程併入原本的系所課表內
 def hard_insert() : 
 	path = os.getcwd()
