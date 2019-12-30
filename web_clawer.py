@@ -23,7 +23,7 @@ def CCU_login(options) :
 	driver = webdriver.Chrome(chrome_options = options)
 
 	login_url = "https://kiki.ccu.edu.tw/~ccmisp06/cgi-bin/class_new/login.php?m=0"
-	res = driver.get(login_url)
+	driver.get(login_url)
 	driver.maximize_window()
 
 	user_name_input = driver.find_element_by_xpath(u"/html/body/font/center/form/table/tbody/tr[2]/td[2]/input")
@@ -166,18 +166,6 @@ def process_tables(page) :
 		
 	df = pd.DataFrame(pre_df_lst[1:] , columns = pre_df_lst[0])
 	return df
-
-	'''
-	
-	if driver.find_element_by_link_text("第2頁").is_enabled() : 
-		next_page_btn = 
-
-	'''
-
-
-
-
-
 
 
 
