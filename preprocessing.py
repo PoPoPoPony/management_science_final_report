@@ -458,7 +458,8 @@ def delicate_time_conflict() :
 	
 def free_score() : 
 	dpt_df_lst = read_time_conflict_file()
-	
+	mis_df = dpt_df_lst.pop(1)
+
 	'''
 	for i in range(len(dpt_df_lst)) : 
 		dpt_df_lst[i].sort_values(by = "semester" , ascending = True , inplace = True)
@@ -472,8 +473,6 @@ def free_score() :
 			temp.append(len(temp_df.drop_duplicates().to_list()))
 		year_course_len.append(temp)
 
-
-	mis_df = dpt_df_lst.pop(1)
 	free_score_lst = []
 	all_course_lst = []
 
@@ -487,12 +486,16 @@ def free_score() :
 			temp.append(score)
 		free_score_lst.append(temp)
 
-	#將index轉換成index
-	for i in range(4) : 
+
+
+	#將index轉換成累積index
+	for i in range(3) : 
 		temp = []
 		for j in range(4) : 
 			temp.append(year_course_len[i][j] + sum(year_course_len[i][0 : j]))
 		year_course_len[i] = temp
+
+	
 
 	mis_financial_free_score = [sum(free_score_lst[0][0 : year_course_len[0][0]])]
 	mis_ie_free_score = [sum(free_score_lst[1][0 : year_course_len[1][0]])]
@@ -507,11 +510,5 @@ def free_score() :
 	for i in range(1 , 4) : 
 		mis_accounting_free_score.append(sum(free_score_lst[2][year_course_len[2][i - 1] : year_course_len[2][i]]))
 
-
 	return mis_financial_free_score , mis_ie_free_score , mis_accounting_free_score
 	
-
-
-
-
-free_score()
