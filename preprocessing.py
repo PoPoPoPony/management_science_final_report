@@ -244,15 +244,18 @@ def course_overlap() :
 		if i in accounting_course : 
 			mis_accounting_overlap += 1
 	
-	mis_financial_ratio = mis_financial_overlap / (len(mis_course) + len(financial_course) - mis_financial_overlap)
-	mis_ie_ratio = mis_ie_overlap / (len(mis_course) + len(ie_course) - mis_ie_overlap)
-	mis_accounting_ratio = mis_accounting_overlap / (len(mis_course) + len(accounting_course) - mis_accounting_overlap)
+	mis_financial_course_len = len(mis_course) + len(financial_course) - mis_financial_overlap
+	mis_ie_course_len = len(mis_course) + len(ie_course) - mis_ie_overlap
+	mis_accounting_course_len = len(mis_course) + len(accounting_course) - mis_accounting_overlap
 
-	print(mis_financial_ratio)
-	print(mis_ie_ratio)
-	print(mis_accounting_ratio)
+	mis_financial_ratio = mis_financial_overlap / mis_financial_course_len
+	mis_ie_ratio = mis_ie_overlap / mis_ie_course_len
+	mis_accounting_ratio = mis_accounting_overlap / mis_accounting_course_len
 	
-	return mis_financial_ratio , mis_ie_ratio , mis_accounting_ratio
+	return_data = [[mis_financial_course_len , mis_ie_course_len , mis_accounting_course_len] , [mis_financial_overlap , mis_ie_overlap , mis_accounting_overlap] , 
+	[mis_financial_ratio , mis_ie_ratio , mis_accounting_ratio] , len(mis_course)]
+
+	return return_data
 	
 
 #處理課程名稱，將其盡量統一格式
@@ -336,7 +339,6 @@ def rough_time_conflict() :
 	#i : 科系的資料表
 	#j : 年級
 	#k : 學期
-	#還沒計算選課自由度
 	for i in range(len(dpt_df_lst)) : 
 		dpt_df_lst[i]['is_conflict'] = 0
 	mis_df['is_conflict'] = 0
@@ -433,6 +435,17 @@ def compare_time(mis_time_lst , other_time_lst) :
 def delicate_time_conflict() : 
 	dpt_df_lst = read_time_conflict_file()
 	mis_df = dpt_df_lst.pop(1)
+
+	'''
+	year_course_len = []
+	for i in range(len(dpt_df_lst)) : 
+		temp = []
+		for j in range(1 , 5) : 
+			temp_df = dpt_df_lst[i].loc[dpt_df_lst[i]["Year Standing"] == j , "Course Title"]
+			temp.append(len(temp_df.drop_duplicates().to_list()))
+		year_course_len.append(temp)
+	'''
+	
 	conflict_number_lst = [0] * 3
 	all_course_number_lst = []
 
@@ -460,11 +473,7 @@ def free_score() :
 	dpt_df_lst = read_time_conflict_file()
 	mis_df = dpt_df_lst.pop(1)
 
-	'''
-	for i in range(len(dpt_df_lst)) : 
-		dpt_df_lst[i].sort_values(by = "semester" , ascending = True , inplace = True)
-	'''
-
+	#得到每個年級有幾門課(有幾個free_score屬於該年級)
 	year_course_len = []
 	for i in range(len(dpt_df_lst)) : 
 		temp = []
@@ -473,6 +482,7 @@ def free_score() :
 			temp.append(len(temp_df.drop_duplicates().to_list()))
 		year_course_len.append(temp)
 
+	#計算每個課程的自由度
 	free_score_lst = []
 	all_course_lst = []
 
@@ -486,16 +496,12 @@ def free_score() :
 			temp.append(score)
 		free_score_lst.append(temp)
 
-
-
 	#將index轉換成累積index
 	for i in range(3) : 
 		temp = []
 		for j in range(4) : 
 			temp.append(year_course_len[i][j] + sum(year_course_len[i][0 : j]))
 		year_course_len[i] = temp
-
-	
 
 	mis_financial_free_score = [sum(free_score_lst[0][0 : year_course_len[0][0]])]
 	mis_ie_free_score = [sum(free_score_lst[1][0 : year_course_len[1][0]])]
@@ -510,5 +516,5 @@ def free_score() :
 	for i in range(1 , 4) : 
 		mis_accounting_free_score.append(sum(free_score_lst[2][year_course_len[2][i - 1] : year_course_len[2][i]]))
 
-	return mis_financial_free_score , mis_ie_free_score , mis_accounting_free_score
+	return mis_financial_free_score , mis_ie_free_score , mis_accounting_free_score , free_score_lst
 	
