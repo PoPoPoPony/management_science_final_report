@@ -61,17 +61,41 @@ def course_overlap_chart() :
 
 	plt.show()
 	
-#def time_conflict_chart() : 
+def time_conflict_chart() : 
+	mis_financial_time_conflict , mis_ie_time_conflict , mis_accounting_time_conflict , time_conflict_lst = preprocessing.delicate_time_conflict()
+
+	df = pd.DataFrame([mis_financial_time_conflict , mis_ie_time_conflict , mis_accounting_time_conflict] , columns = ["Y1" , "Y2" , "Y3" , "Y4"])
+	df["dpt"] = ["financial" , "ie" , "accounting"]
+
+	print(df)
+	for i in time_conflict_lst : 
+		print(i)
+
+	plt.figure(figsize = (100 , 80))
+	plt.title(u"Course Overlap Score between MIS and other departments" , fontsize = 32)
+
+	for i in range(1 , 4) : 
+		plt.subplot(2 , 2 , i)
+		plt.title("MIS and " + df['dpt'].to_list()[i - 1] + " Time Conflict piechart")
+		plt.pie([len(time_conflict_lst[i - 1]) - sum(df.iloc[i - 1 , 0 : 4].to_list()) , sum(df.iloc[i - 1 , 0 : 4].to_list())] , 
+		autopct = "%1.1f%%" , pctdistance = 0.6 , colors = ["blue" , "orange"] ,            
+		textprops = {"fontsize" : 12} , labels = ["Conflicted Course(%)" , "unConflicted Course(%)"])
+
+	plt.subplot(2 , 2 , 4)
+	plt.title("Compare Time Conflict")
+	plt.bar(df["dpt"] , df["Y1"] , label = "Yl")
+	plt.bar(df["dpt"] , df["Y2"] , bottom = df["Y1"] , label = "Y2")
+	plt.bar(df["dpt"] , df["Y3"] , bottom = df["Y1"] + df["Y2"] , label = "Y3")
+	plt.bar(df["dpt"] , df["Y4"] , bottom = df["Y1"] + df["Y2"] + df["Y3"] , label = "Y4")
+
+	plt.xlabel("department")
+	
+	plt.text(-0.05 , 13.5 , sum(mis_financial_time_conflict) , fontsize = 20)
+	plt.text(0.93 , 11.4 , sum(mis_ie_time_conflict) , fontsize = 20)
+	plt.text(1.95 , 10.2 , sum(mis_accounting_time_conflict) , fontsize = 20)
+	plt.legend()
+	plt.show()
+	
 
 
-
-
-
-
-
-
-
-
-
-
-#time_conflict_chart()
+time_conflict_chart()

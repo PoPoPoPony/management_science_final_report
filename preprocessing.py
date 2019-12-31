@@ -436,7 +436,6 @@ def delicate_time_conflict() :
 	dpt_df_lst = read_time_conflict_file()
 	mis_df = dpt_df_lst.pop(1)
 
-	'''
 	year_course_len = []
 	for i in range(len(dpt_df_lst)) : 
 		temp = []
@@ -444,30 +443,43 @@ def delicate_time_conflict() :
 			temp_df = dpt_df_lst[i].loc[dpt_df_lst[i]["Year Standing"] == j , "Course Title"]
 			temp.append(len(temp_df.drop_duplicates().to_list()))
 		year_course_len.append(temp)
-	'''
 	
-	conflict_number_lst = [0] * 3
+	conflict_lst = []
 	all_course_number_lst = []
 
 	for i in range(len(dpt_df_lst)) : 
 		course_title_lst = dpt_df_lst[i]["Course Title"].drop_duplicates().to_list()
 		all_course_number_lst.append(len(course_title_lst))
+		temp = []
 		for j in course_title_lst : 
-			if sum(dpt_df_lst[i].loc[dpt_df_lst[i]["Course Title"] == j , "is_conflict"].to_list()) != len(dpt_df_lst[i].loc[dpt_df_lst[i]["Course Title"] == j , "is_conflict"].to_list()) : 
-				print(dpt_df_lst[i].loc[dpt_df_lst[i]["Course Title"] == j , "is_conflict"].to_list())
-				conflict_number_lst[i] += 1
-	
-	mis_financial_time_conflict_ratio = conflict_number_lst[0] / all_course_number_lst[0]
-	mis_ie_time_conflict_ratio = conflict_number_lst[1] / all_course_number_lst[1]
-	mis_accounting_time_conflict_ratio = conflict_number_lst[2] / all_course_number_lst[2]
+			if sum(dpt_df_lst[i].loc[dpt_df_lst[i]["Course Title"] == j , "is_conflict"].to_list()) == len(dpt_df_lst[i].loc[dpt_df_lst[i]["Course Title"] == j , "is_conflict"].to_list()) : 
+				temp.append(1)
+			else : 
+				temp.append(0)
+		conflict_lst.append(temp)
 
-	print(mis_financial_time_conflict_ratio)
-	print(mis_ie_time_conflict_ratio)
-	print(mis_accounting_time_conflict_ratio)
+	for i in range(3) : 
+		temp = []
+		for j in range(4) : 
+			temp.append(year_course_len[i][j] + sum(year_course_len[i][0 : j]))
+		year_course_len[i] = temp
 
-	return mis_financial_time_conflict_ratio , mis_ie_time_conflict_ratio , mis_accounting_time_conflict_ratio
+	mis_financial_time_conflict = [sum(conflict_lst[0][0 : year_course_len[0][0]])]
+	mis_ie_time_conflict = [sum(conflict_lst[1][0 : year_course_len[1][0]])]
+	mis_accounting_time_conflict = [sum(conflict_lst[2][0 : year_course_len[2][0]])]
 
+	for i in range(1 , 4) : 
+		mis_financial_time_conflict.append(sum(conflict_lst[0][year_course_len[0][i - 1] : year_course_len[0][i]]))
 
+	for i in range(1 , 4) : 
+		mis_ie_time_conflict.append(sum(conflict_lst[1][year_course_len[1][i - 1] : year_course_len[1][i]]))
+
+	for i in range(1 , 4) : 
+		mis_accounting_time_conflict.append(sum(conflict_lst[2][year_course_len[2][i - 1] : year_course_len[2][i]]))
+
+	return mis_financial_time_conflict , mis_ie_time_conflict , mis_accounting_time_conflict , conflict_lst
+
+delicate_time_conflict()
 	
 def free_score() : 
 	dpt_df_lst = read_time_conflict_file()
