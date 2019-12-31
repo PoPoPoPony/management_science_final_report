@@ -479,7 +479,7 @@ def delicate_time_conflict() :
 
 	return mis_financial_time_conflict , mis_ie_time_conflict , mis_accounting_time_conflict , conflict_lst
 
-delicate_time_conflict()
+
 	
 def free_score() : 
 	dpt_df_lst = read_time_conflict_file()
