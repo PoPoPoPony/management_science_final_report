@@ -3,6 +3,7 @@ import os
 import pandas as pd
 import output
 import numpy as np
+from sklearn.preprocessing import MinMaxScaler
 
 def get_source(semester) : 
 	semester = str(semester)
@@ -530,3 +531,49 @@ def free_score() :
 
 	return mis_financial_free_score , mis_ie_free_score , mis_accounting_free_score , free_score_lst
 	
+#計算最終分數，time_conflict & free_score 依年級由小到大賦予權重，因為年級越低的話，衝堂越容易擋到後面的課，造成的影響較大，故賦予不同的權重
+#賦予權重完後，進行歸一化，再將各個變量 * 33，得到最終分數
+def final_score() : 
+	course_len_lst , overlap_lst , overlap_ratio_lst , mis_course_len = course_overlap()
+	mis_financial_time_conflict , mis_ie_time_conflict , mis_accounting_time_conflict , conflict_lst = delicate_time_conflict()
+	mis_financial_free_score , mis_ie_free_score , mis_accounting_free_score , free_score_lst = free_score()
+
+	weight = [1.3 , 1.2 , 1.1 , 1]
+
+	for i in range(len(mis_financial_time_conflict)) : 
+		if mis_financial_time_conflict[i] == 0 : 
+			pass
+
+		else : 
+			mis_financial_time_conflict[i] = 1 / mis_financial_time_conflict[i]
+			mis_ie_time_conflict[i] = 1 / mis_ie_time_conflict[i]
+			mis_accounting_time_conflict[i] = 1 / mis_accounting_time_conflict[i]
+
+
+		mis_financial_time_conflict[i] = mis_financial_time_conflict[i] * weight[i]
+		mis_ie_time_conflict[i] = mis_ie_time_conflict[i] * weight[i]
+		mis_accounting_time_conflict[i] = mis_accounting_time_conflict[i] * weight[i]
+
+		mis_financial_free_score[i] = mis_financial_free_score[i] * weight[i]
+		mis_ie_free_score[i] = mis_ie_free_score[i] * weight[i]
+		mis_accounting_free_score[i] = mis_accounting_free_score[i] * weight[i]
+
+	time_conflict_ratio_lst = [sum(mis_financial_time_conflict) , sum(mis_ie_time_conflict) , sum(mis_accounting_time_conflict)]
+	free_score_ratio_lst = [sum(mis_financial_free_score) , sum(mis_ie_free_score) , sum(mis_accounting_free_score)]
+
+	all_data_lst = [overlap_ratio_lst , time_conflict_ratio_lst , free_score_ratio_lst]
+
+	mm = MinMaxScaler()
+	for i in range(len(all_data_lst)) : 
+		all_data_lst[i] = mm.fit_transform(np.array(all_data_lst[i]).reshape(-1 , 1))
+	
+	financial_final_score = 0
+	ie_final_score = 0
+	accounting_final_score = 0
+
+	for i in all_data_lst : 
+		financial_final_score += i[0] * 33
+		ie_final_score += i[1] * 33
+		accounting_final_score += i[2] * 33
+
+	return financial_final_score , ie_final_score , accounting_final_score

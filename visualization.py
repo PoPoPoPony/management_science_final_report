@@ -42,9 +42,9 @@ def course_overlap_chart() :
 	for i , j in enumerate([x for x in range(1 , 7) if x % 2 == 0]) : 
 		plt.subplot(2 , 4 , j)
 		plt.title("MIS and " + df.columns.to_list()[i] + " Course Overlap piechart")
-		plt.pie([course_len_lst[i] - overlap_lst[i] - mis_course_len , mis_course_len - overlap_lst[i] , overlap_lst[i]] , 
+		plt.pie([course_len_lst[i] - mis_course_len , mis_course_len - overlap_lst[i] , overlap_lst[i]] , 
 		autopct = "%1.1f%%" , pctdistance = 0.6 , colors = ["green" , "orange" , "blue"] ,            
-		textprops = {"fontsize" : 12})
+		textprops = {"fontsize" : 12} , labels = [df.columns.to_list()[i] + " Course(%)" , "MIS Course(%)" , "overlap Course(%)"])
 		
 	for i , j in enumerate([x for x in range(1 , 7) if x % 2 == 1]) : 
 		plt.subplot(2 , 4 , j)
@@ -79,7 +79,7 @@ def time_conflict_chart() :
 		plt.title("MIS and " + df['dpt'].to_list()[i - 1] + " Time Conflict piechart")
 		plt.pie([len(time_conflict_lst[i - 1]) - sum(df.iloc[i - 1 , 0 : 4].to_list()) , sum(df.iloc[i - 1 , 0 : 4].to_list())] , 
 		autopct = "%1.1f%%" , pctdistance = 0.6 , colors = ["blue" , "orange"] ,            
-		textprops = {"fontsize" : 12} , labels = ["Conflicted Course(%)" , "unConflicted Course(%)"])
+		textprops = {"fontsize" : 12} , labels = ["unConflicted Course(%)" , "Conflicted Course(%)"])
 
 	plt.subplot(2 , 2 , 4)
 	plt.title("Compare Time Conflict")
@@ -97,5 +97,6 @@ def time_conflict_chart() :
 	plt.show()
 	
 
-
+free_score_barplot()
+course_overlap_chart()
 time_conflict_chart()
