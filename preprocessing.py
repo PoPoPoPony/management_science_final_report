@@ -567,13 +567,13 @@ def final_score() :
 	for i in range(len(all_data_lst)) : 
 		all_data_lst[i] = mm.fit_transform(np.array(all_data_lst[i]).reshape(-1 , 1))
 	
-	financial_final_score = 0
-	ie_final_score = 0
-	accounting_final_score = 0
+	financial_final_score = []
+	ie_final_score = []
+	accounting_final_score = []
 
 	for i in all_data_lst : 
-		financial_final_score += i[0] * 33
-		ie_final_score += i[1] * 33
-		accounting_final_score += i[2] * 33
+		financial_final_score.append(float(i[0] * 33))
+		ie_final_score.append(float(i[1] * 33))
+		accounting_final_score.append(float(i[2] * 33))
 
 	return financial_final_score , ie_final_score , accounting_final_score
